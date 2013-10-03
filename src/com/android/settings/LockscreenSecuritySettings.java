@@ -62,6 +62,9 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_VISIBLE_GESTURE = "visiblegesture";
     private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
 
+    // Omni Additions
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
 
@@ -82,6 +85,9 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
     public LockscreenSecuritySettings() {
         super(null /* Don't ask for restrictions pin on creation. */);
     }
+
+    // Omni Additions
+    private CheckBoxPreference mLockRingBattery;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -144,6 +150,14 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
         if (mLockAfter != null) {
             setupLockAfterPreference();
             updateLockAfterPreferenceSummary();
+        }
+
+        // Add the additional Omni settings
+        mLockRingBattery = (CheckBoxPreference) root
+                .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+        if (mLockRingBattery != null) {
+            mLockRingBattery.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
         }
 
         // biometric weak liveliness
@@ -299,6 +313,9 @@ public class LockscreenSecuritySettings extends RestrictedSettingsFragment
         final LockPatternUtils lockPatternUtils = mChooseLockSettingsHelper.utils();
         if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
+        } else if (preference == mLockRingBattery) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
         } else if (KEY_UNLOCK_SET_OR_CHANGE.equals(key)) {
             startFragment(this, "com.android.settings.ChooseLockGeneric$ChooseLockGenericFragment",
                     SET_OR_CHANGE_LOCK_METHOD_REQUEST, null);
