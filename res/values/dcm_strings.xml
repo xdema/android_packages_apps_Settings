@@ -26,6 +26,9 @@
     <string name="theme_auto_mode_twilight">On daytime</string>
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
 
+    <!-- TRDS tile -->
+    <string name="title_tile_theme">Theme switcher</string>
+
     <!-- Halo -->
     <!-- Halo enable/disable -->
     <string name="halo_active_title">Halo switch</string>
