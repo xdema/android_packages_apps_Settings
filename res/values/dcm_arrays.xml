@@ -2,6 +2,19 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- TRDS -->
+    <string-array name="theme_auto_mode_entries">
+        <item>@string/theme_auto_mode_off</item>
+        <item>@string/theme_auto_mode_lightsensor</item>
+        <item>@string/theme_auto_mode_twilight</item>
+    </string-array>
+
+    <string-array name="theme_auto_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Halo -->
     <string-array name="entries_halo_state">
         <item>@string/halo_state_black</item>

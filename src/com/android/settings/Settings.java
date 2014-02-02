@@ -129,6 +129,7 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.WifiEnabler;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+import com.android.settings.crdroid.themes.ThemeEnabler;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -177,6 +178,8 @@ public class Settings extends PreferenceActivity
     private Header mCurrentHeader;
     private Header mParentHeader;
     private boolean mInLocalHeaderSwitch;
+
+    private int mCurrentState = 0;
 
     // Show only these settings for restricted users
     private int[] SETTINGS_FOR_RESTRICTED = {
@@ -1022,6 +1025,7 @@ public class Settings extends PreferenceActivity
         private final VoiceWakeupEnabler mVoiceWakeupEnabler;
         private AuthenticatorHelper mAuthHelper;
         private DevicePolicyManager mDevicePolicyManager;
+        public static ThemeEnabler mThemeEnabler;
 
         private static class HeaderViewHolder {
             ImageView icon;
@@ -1035,13 +1039,15 @@ public class Settings extends PreferenceActivity
         private LayoutInflater mInflater;
 
         static int getHeaderType(Header header) {
-            if (header.fragment == null && header.intent == null) {
+            if (header.fragment == null && header.intent == null
+                    && header.id != R.id.themes_settings) {
                 return HEADER_TYPE_CATEGORY;
             } else if (header.id == R.id.wifi_settings
                     || header.id == R.id.bluetooth_settings
                     || header.id == R.id.mobile_network_settings
                     || header.id == R.id.profiles_settings
                     || header.id == R.id.voice_wakeup_settings
+                    || header.id == R.id.themes_settings
                     || header.id == R.id.location_settings) {
                 return HEADER_TYPE_SWITCH;
             } else if (header.id == R.id.security_settings) {
@@ -1091,6 +1097,7 @@ public class Settings extends PreferenceActivity
             mMobileDataEnabler = new MobileDataEnabler(context, new Switch(context));
             mProfileEnabler = new ProfileEnabler(context, new Switch(context));
             mLocationEnabler = new LocationEnabler(context, new Switch(context));
+            mThemeEnabler = new ThemeEnabler(context, new Switch(context));
             mVoiceWakeupEnabler = new VoiceWakeupEnabler(context, new Switch(context));
             mDevicePolicyManager = dpm;
         }
@@ -1169,6 +1176,8 @@ public class Settings extends PreferenceActivity
                         mProfileEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.location_settings) {
                         mLocationEnabler.setSwitch(holder.switch_);
+                    } else if (header.id == R.id.themes_settings) {
+                        mThemeEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.voice_wakeup_settings) {
                         mVoiceWakeupEnabler.setSwitch(holder.switch_);
                     }
@@ -1247,6 +1256,7 @@ public class Settings extends PreferenceActivity
             mMobileDataEnabler.resume();
             mProfileEnabler.resume();
             mLocationEnabler.resume();
+            mThemeEnabler.resume();
             mVoiceWakeupEnabler.resume();
         }
 
@@ -1256,6 +1266,7 @@ public class Settings extends PreferenceActivity
             mMobileDataEnabler.pause();
             mProfileEnabler.pause();
             mLocationEnabler.pause();
+            mThemeEnabler.resume();
             mVoiceWakeupEnabler.pause();
         }
     }
@@ -1329,6 +1340,16 @@ public class Settings extends PreferenceActivity
         mAuthenticatorHelper.updateAuthDescriptions(this);
         mAuthenticatorHelper.onAccountsUpdated(this, accounts);
         invalidateHeaders();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.uiThemeMode != mCurrentState && HeaderAdapter.mThemeEnabler != null) {
+            mCurrentState = newConfig.uiThemeMode;
+            HeaderAdapter.mThemeEnabler.setSwitchState();
+        }
     }
 
     public static void requestHomeNotice() {
