@@ -46,7 +46,8 @@ import static com.android.internal.util.cm.QSConstants.TILE_USER;
 import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
-import static com.android.internal.util.cm.QSConstants.TILE_POWER;  
+import static com.android.internal.util.cm.QSConstants.TILE_POWER;
+import static com.android.internal.util.cm.QSConstants.TILE_THEME;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -160,7 +161,10 @@ public class QuickSettingsUtil {
                 "com.android.systemui:drawable/ic_qs_network_adb_off"));
 	registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_POWER, R.string.title_tile_power,
-                "com.android.systemui:drawable/ic_qs_powermenu"));    
+                "com.android.systemui:drawable/ic_qs_powermenu"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_THEME, R.string.title_tile_theme,
+                "com.android.systemui:drawable/ic_qs_theme_manual"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {

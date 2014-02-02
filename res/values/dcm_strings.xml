@@ -32,6 +32,9 @@
     <!-- crDroid notifications -->
     <string name="crdroid_notifications_title">Notification services</string>
 
+    <!-- TRDS tile -->
+    <string name="title_tile_theme">Theme switcher</string>
+
     <!-- Halo -->
     <!-- Halo enable/disable -->
     <string name="halo_active_title">Halo switch</string>
