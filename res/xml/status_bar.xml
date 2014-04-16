@@ -60,4 +60,9 @@
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="network_usage_stats"
+        android:fragment="com.android.settings.cyanogenmod.NetworkUsageStats"
+        android:title="@string/status_bar_network_cat" />
+
 </PreferenceScreen>
