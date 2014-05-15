@@ -43,6 +43,12 @@
             android:title="@string/sizer_title"
             android:fragment="com.android.settings.crdroid.SystemappRemover" />
 
+        <!-- Driving mode -->
+        <PreferenceScreen
+            android:key="interface_voice_tts"
+            android:title="@string/voice_tts_title"
+            android:fragment="com.android.settings.aicp.TtsNotification" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
