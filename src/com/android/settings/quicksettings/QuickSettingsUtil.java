@@ -48,6 +48,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_POWER;
 import static com.android.internal.util.cm.QSConstants.TILE_THEME;
+import static com.android.internal.util.cm.QSConstants.TILE_FASTCHARGE;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -165,6 +166,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_THEME, R.string.title_tile_theme,
                 "com.android.systemui:drawable/ic_qs_theme_manual"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_FASTCHARGE, R.string.title_tile_fast_charge,
+                "com.android.systemui:drawable/ic_qs_fcharge_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -230,6 +234,11 @@ public class QuickSettingsUtil {
         // Don't show the Compass tile if the device has no orientation sensor
         if (!QSUtils.deviceSupportsCompass(context)) {
             removeTile(TILE_COMPASS);
+        }
+
+        // Don't show if the kernel don't support this
+        if (!QSUtils.hasKernelFeature("/sys/kernel/fast_charge/force_fast_charge")) {
+            removeTile(TILE_FASTCHARGE);
         }
     }
 
