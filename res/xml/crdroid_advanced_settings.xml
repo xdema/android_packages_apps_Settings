@@ -37,6 +37,12 @@
             android:entries="@array/media_scanner_on_boot_entries"
             android:entryValues="@array/media_scanner_on_boot_values" />
 
+        <!-- Slim System app remover -->
+        <PreferenceScreen
+            android:id="@+id/system_app_remover"
+            android:title="@string/sizer_title"
+            android:fragment="com.android.settings.crdroid.SystemappRemover" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
