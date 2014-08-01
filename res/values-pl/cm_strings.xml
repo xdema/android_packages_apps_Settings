@@ -422,6 +422,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="pref_use_16bpp_alpha_summary">Lepsza wydajność graficzna kosztem jakości. Może wywoływać artefakty (wymaga restartu)</string>
   <string name="pref_force_highend_gfx_title">Wymuś efekty graficzne</string>
   <string name="pref_force_highend_gfx_summary">Włącza efekty graficzne wymagające lepszego sprzętu, takie jak przeźroczysty pasek stanu/nawigacji (wymaga restartu)</string>
+  <string name="changelog_title">Zobacz listę zmian</string>
   <string name="kill_app_longpress_back">Zabijaj aplikacje przyciskiem wstecz</string>
   <string name="kill_app_longpress_back_summary">Przytrzymanie przycisku wstecz zabija aktywną aplikację</string>
   <string name="changelog_title">Lista zmian</string>
@@ -449,7 +450,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="privacy_guard_help_title">Pomoc</string>
   <string name="privacy_guard_reset_title">Resetuj</string>
   <string name="privacy_guard_reset_text">Zresetować uprawnienia?</string>
-  <string name="privacy_guard_help_text">Na tym ekranie możesz wskazać aplikacje, dla których ochrona prywatności ma być aktywna. Zaznaczone aplikacje nie będą miały dostępu do osobistych danych, takich jak kontakty, wiadomości czy historia połączeń. Dłuższe przytrzymanie palcem na wybranej pozycji otworzy ekran ze szczegółowymi informacjami.\n\nAplikacje wbudowane w system nie są domyślnie wyświetlane. Jeżeli chcesz je zobaczyć lub zawęzić listę do aplikacji uzyskujących dostęp do danych osobistych, wybierz odpowiednią opcję z menu.</string>
   <string name="privacy_guard_manager_show_system_apps">Pokaż aplikacje wbudowane w system</string>
   <string name="privacy_guard_manager_filter_permissions">Filtr wg uprawnień</string>
   <string name="privacy_guard_advanced_settings_title">Zaawansowane</string>
@@ -574,7 +574,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="lockscreen_long_press_home_title">Przytrzymanie przycisku Home</string>
   <string name="lockscreen_long_press_menu_title">Przytrzymanie przycisku Menu</string>
   <string name="lockscreen_buttons_no_action">Brak akcji</string>
-  <string name="lockscreen_buttons_flashlight">Latarka</string>
   <string name="lockscreen_buttons_next">Następny utwór</string>
   <string name="lockscreen_buttons_previous">Poprzedni utwór</string>
   <string name="lockscreen_buttons_playpause">Odtwórz/Zatrzymaj muzykę</string>
@@ -617,8 +616,6 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
   <string name="expanded_desktop_disabled">Wyłączony</string>
   <string name="expanded_desktop_status_bar">Pasek stanu widoczny</string>
   <string name="expanded_desktop_no_status_bar">Pasek stanu ukryty</string>
-  <string name="expanded_desktop_system_bars_visibility">Wyłącz na ekranie blokady</string>
-  <string name="expanded_desktop_system_bars_visibility_summary">Pokaż paski statusu i nawigacji na ekranie blokady przy aktywnym trybie rozszerzonego pulpitu</string>
   <string name="power_menu_profiles_title">Przełączanie profilu</string>
   <string name="power_menu_airplane_title">Tryb samolotowy</string>
   <string name="power_menu_user_title">Przełączanie użytkownika</string>
