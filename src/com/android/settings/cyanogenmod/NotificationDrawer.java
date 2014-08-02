@@ -19,6 +19,7 @@ package com.android.settings.cyanogenmod;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -34,9 +35,11 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
     private static final String TAG = "NotificationDrawer";
 
     private static final String UI_COLLAPSE_BEHAVIOUR = "notification_drawer_collapse_on_dismiss";
+    private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
     private static final String PRE_SMART_PULLDOWN = "smart_pulldown";
     
     private ListPreference mCollapseOnDismiss;
+    private CheckBoxPreference mStatusBarCustomHeader;
     private ListPreference mSmartPulldown;
     
     @Override
@@ -54,6 +57,12 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
         mCollapseOnDismiss.setValue(String.valueOf(collapseBehaviour));
         mCollapseOnDismiss.setOnPreferenceChangeListener(this);
         updateCollapseBehaviourSummary(collapseBehaviour);
+
+        // Time-context headers
+        mStatusBarCustomHeader = (CheckBoxPreference) findPreference(STATUS_BAR_CUSTOM_HEADER);
+        mStatusBarCustomHeader.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1);
+        mStatusBarCustomHeader.setOnPreferenceChangeListener(this);
 
         // Smart Pulldown
         mSmartPulldown = (ListPreference) findPreference(PRE_SMART_PULLDOWN);
@@ -80,6 +89,11 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.QS_SMART_PULLDOWN,
                     smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
+            return true;
+        } else if (preference == mStatusBarCustomHeader) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
             return true;
         }
 
