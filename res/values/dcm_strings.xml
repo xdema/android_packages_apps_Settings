@@ -878,4 +878,8 @@
     <!-- Fast Charge tile -->
     <string name="title_tile_fast_charge">Fast charge</string>
 
+    <!-- QuickSettings fliptiles -->
+    <string name="flip_qs_tiles_title">Flip tiles</string>
+    <string name="flip_qs_tiles_summary">Flips the tiles on touch</string>
+
 </resources>
