@@ -891,4 +891,7 @@
     <string name="qs_blur_background_fade">use fade effect when scrolling panel</string>
     <string name="qs_blur_background">real time surface background with blur effect</string>
 
+    <!-- Heads-up disable on lockscreen -->
+    <string name="heads_up_exclude_from_lock_screen">Disable on lockscreen</string>
+
 </resources>
