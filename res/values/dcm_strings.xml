@@ -886,6 +886,8 @@
     <string name="category_notification_panel_blur_title">Panel Background</string>
     <string name="title_qs_blur_background">Blur Background</string>
     <string name="title_qs_blur_background_fade">fade effect</string>
+    <string name="title_qs_blur_background_colorfilter">Color filter</string>
+    <string name="qs_blur_background_colorfilter">set background blur with color filter</string>
     <string name="qs_blur_background_fade">use fade effect when scrolling panel</string>
     <string name="qs_blur_background">real time surface background with blur effect</string>
 
