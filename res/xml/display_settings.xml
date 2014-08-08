@@ -194,6 +194,13 @@
                 android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
                 android:title="@string/gesture_anywhere_title" />
 
+            <!-- SmoothProgressBar -->
+            <PreferenceScreen
+                android:key="progressbar_settings"
+                android:fragment="com.android.settings.cyanogenmod.ProgressBar"
+                android:title="@string/progressbar_title" >
+            </PreferenceScreen>
+
             <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
