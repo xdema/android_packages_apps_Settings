@@ -653,11 +653,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.LOCKSCREEN_LID_WAKE, (Boolean) objValue ? 1 : 0);
             return true;
         } else if (preference == mToastAnimation) {
-	         int index = mToastAnimation.findIndexOfValue((String) newValue);
-	         Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
-	         mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
-	         Toast.makeText(getActivity(), "Toast Test", Toast.LENGTH_SHORT).show();
-	         return true;
+            int index = mToastAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+            return true;
         }
         return true;
     }
