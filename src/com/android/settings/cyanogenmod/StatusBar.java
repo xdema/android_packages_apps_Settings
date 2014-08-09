@@ -16,6 +16,7 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.content.Context;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.net.ConnectivityManager;
