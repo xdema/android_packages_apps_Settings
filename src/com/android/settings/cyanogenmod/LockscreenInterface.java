@@ -56,6 +56,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String KEY_LOCKSCREEN_TARGETS = "lockscreen_targets";
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
     private static final String KEY_DISABLE_FRAME = "lockscreen_disable_frame";
+    private static final String KEY_LOCKSCREEN_MUSIC_CONTROLLER ="keyguard_enable_musiccontroller";
 
     private static final int DLG_ALL_WIDGETS = 0;
 
@@ -68,6 +69,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private Preference mLockscreenTargets;
     private CheckBoxPreference mLockBeforeUnlock;
     private CheckBoxPreference mDisableFrame;
+    private CheckBoxPreference mLockscreenMusicController;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
     private LockPatternUtils mLockUtils;
@@ -160,6 +162,10 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             widgetsCategory.removePreference(
                     mEnableMaximizeWidgets);
         }
+
+        mLockscreenMusicController = (CheckBoxPreference)findPreference(KEY_LOCKSCREEN_MUSIC_CONTROLLER);
+        mLockscreenMusicController.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.LOCKSCREEN_MUSIC_SWITCH, 1) == 1);
+
     }
 
     @Override
@@ -235,6 +241,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             return true;
         } else if (KEY_ENABLE_CAMERA.equals(key)) {
             mLockUtils.setCameraEnabled(mEnableCameraWidget.isChecked());
+            return true;
+        } else if (KEY_LOCKSCREEN_MUSIC_CONTROLLER.equals(key)) {
+	    boolean value = mLockscreenMusicController.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_MUSIC_SWITCH, value ? 1 : 0);
             return true;
         } else if (preference == mLockBeforeUnlock) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.LOCK_BEFORE_UNLOCK,

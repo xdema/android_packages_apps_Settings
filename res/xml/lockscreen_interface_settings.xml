@@ -82,8 +82,13 @@
             android:summary="@string/lockscreen_allow_all_summary" />
 
         <CheckBoxPreference
-                android:key="keyguard_enable_camera"
-                android:title="@string/lockscreen_enable_camera_title" />
+            android:key="keyguard_enable_musiccontroller"
+            android:title="@string/lockscreen_music_controller_title" 
+            android:summary="@string/lockscreen_music_controller_summary" />
+
+        <CheckBoxPreference
+            android:key="keyguard_enable_camera"
+            android:title="@string/lockscreen_enable_camera_title" />
 
         <!-- Lock clock -->
         <PreferenceScreen

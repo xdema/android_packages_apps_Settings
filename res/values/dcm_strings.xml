@@ -924,4 +924,8 @@
     <string name="voicemail_breath_title">Breathing Voicemail</string>
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
+    <!-- Switchable LockScreen Music Controller -->
+    <string name="lockscreen_music_controller_title">Media Controller</string>
+    <string name="lockscreen_music_controller_summary">Show media controller and albumart when playing music</string>
+
 </resources>
