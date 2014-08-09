@@ -43,8 +43,9 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
-
 import android.view.WindowManagerGlobal;
+import android.widget.Toast;
+
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
 import com.android.settings.Utils;
@@ -89,6 +90,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
     private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
     private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -105,6 +107,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mScreenOffAnimation;
     private ListPreference mScreenAnimationStylePreference;
     private CheckBoxPreference mSmartCoverWake;
+    private ListPreference mToastAnimation;
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -147,6 +150,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         PreferenceCategory displayPrefs = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
         PreferenceCategory expandedCategory =
                 (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
+
+        mToastAnimation = (ListPreference)findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.System.getInt(getContentResolver(), Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation);
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
 
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
@@ -642,9 +652,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_LID_WAKE, (Boolean) objValue ? 1 : 0);
             return true;
+        } else if (preference == mToastAnimation) {
+	         int index = mToastAnimation.findIndexOfValue((String) newValue);
+	         Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
+	         mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+	         Toast.makeText(getActivity(), "Toast Test", Toast.LENGTH_SHORT).show();
+	         return true;
         }
-
-
         return true;
     }
 

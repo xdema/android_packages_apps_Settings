@@ -201,6 +201,14 @@
                 android:title="@string/progressbar_title" >
             </PreferenceScreen>
 
+            <!-- Toast animation -->
+            <ListPreference
+                android:key="toast_animation"
+                android:title="@string/toast_animation_title"
+                android:entries="@array/toast_animation_entries"
+                android:entryValues="@array/toast_animation_values"
+                android:persistent="false" />
+
             <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
