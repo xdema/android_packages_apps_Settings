@@ -55,7 +55,8 @@
             android:key="recent_panel_bg_color"
             android:title="@string/recent_panel_bg_color_title"
             android:defaultValue="0x00ffffff"
-            alphaSlider="true" />
+            alphaSlider="true"
+            android:dependency="custom_recent_mode" />
 
         <ListPreference
             android:key="recent_panel_scale"
