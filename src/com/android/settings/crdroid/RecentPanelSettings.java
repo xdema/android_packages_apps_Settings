@@ -48,6 +48,7 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
     private static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
 
     private static final int MENU_RESET = Menu.FIRST;
+    private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
     private static final int MENU_HELP = MENU_RESET + 1; 
 
     static final int DEFAULT_MEM_COLOR = 0xff8d8d8d;
@@ -134,6 +135,17 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
         mRecentPanelScale = (ListPreference) findPreference(RECENT_PANEL_SCALE);
         mRecentPanelScale.setOnPreferenceChangeListener(this);
 
+        // Recent panel background color
+        mRecentPanelBgColor =
+                (ColorPickerPreference) findPreference(RECENT_PANEL_BG_COLOR);
+        mRecentPanelBgColor.setOnPreferenceChangeListener(this);
+        final int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.RECENT_PANEL_BG_COLOR, 0x00ffffff);
+        String hexColor = String.format("#%08x", (0x00ffffff & intColor));
+        mRecentPanelBgColor.setSummary(hexColor);
+        mRecentPanelBgColor.setNewPreviewColor(intColor);
+        setHasOptionsMenu(true);
+
         mRecentPanelExpandedMode = (ListPreference) findPreference(RECENT_PANEL_EXPANDED_MODE);
         mRecentPanelExpandedMode.setOnPreferenceChangeListener(this);
         final int recentExpandedMode = Settings.System.getInt(getContentResolver(),
@@ -153,7 +165,7 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.ram_bar_button_reset)
+        menu.add(0, MENU_RESET, 0, R.string.ram_bar_button_reset 0, R.string.menu_restore)
                 .setIcon(R.drawable.ic_settings_backup) // use the backup icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
@@ -172,6 +184,8 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
     private void resetToDefault() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
         alertDialog.setTitle(R.string.ram_bar_reset);
+        alertDialog.setTitle(R.string.shortcut_action_reset);
+        alertDialog.setMessage(R.string.recent_panel_reset_message);
         alertDialog.setMessage(R.string.ram_bar_reset_message);
         alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -180,6 +194,12 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
         });
         alertDialog.setNegativeButton(R.string.cancel, null);
         alertDialog.create().show();
+    }
+
+    private void resetValues() {
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RECENT_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
+        mRecentPanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -289,11 +309,6 @@ public class RecentPanelSettings extends SettingsPreferenceFragment implements O
 
 
     private void updateRecentsOptions() {
-        // Recent panel background color
-        int intColor;
-        String hexColor;
-        mRecentPanelBgColor = (ColorPickerPreference) findPreference(RECENT_PANEL_BG_COLOR);
-        mRecentPanelBgColor.setOnPreferenceChangeListener(this);
         int ramBarMode = Settings.System.getInt(getActivity().getContentResolver(),
                Settings.System.RECENTS_RAM_BAR_MODE, 0);
         boolean recentsStyle = Settings.System.getBoolean(getActivity().getContentResolver(),
