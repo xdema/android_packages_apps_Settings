@@ -216,6 +216,12 @@
                 android:entryValues="@array/toast_animation_values"
                 android:persistent="false" />
 
+            <!-- ListView animation && ListView interpolator -->
+            <PreferenceScreen
+                android:key="listview"
+                android:fragment="com.android.settings.cyanogenmod.Listview"
+                android:title="@string/listview_category" />
+
             <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
