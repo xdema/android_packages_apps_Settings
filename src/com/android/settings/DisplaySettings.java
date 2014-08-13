@@ -91,6 +91,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
     private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
+    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
+    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -108,6 +110,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mScreenAnimationStylePreference;
     private CheckBoxPreference mSmartCoverWake;
     private ListPreference mToastAnimation;
+    private ListPreference mListViewAnimation;
+    private ListPreference mListViewInterpolator;
 
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
@@ -321,6 +325,25 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(lightPrefs);
         }
+
+        //ListView Animations
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        if (mListViewAnimation != null) {
+           int listViewAnimation = Settings.PAC.getInt(getContentResolver(),
+                    Settings.PAC.LISTVIEW_ANIMATION, 1);
+           mListViewAnimation.setSummary(mListViewAnimation.getEntry());
+           mListViewAnimation.setValue(String.valueOf(listViewAnimation));
+        }
+        mListViewAnimation.setOnPreferenceChangeListener(this);
+
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        if (mListViewInterpolator != null) {
+           int listViewInterpolator = Settings.PAC.getInt(getContentResolver(),
+                    Settings.PAC.LISTVIEW_INTERPOLATOR, 1);
+           mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
+           mListViewInterpolator.setValue(String.valueOf(listViewInterpolator));
+        }
+        mListViewInterpolator.setOnPreferenceChangeListener(this);
     }
 
     private void updateDisplayRotationPreferenceDescription() {
@@ -625,6 +648,22 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
+        }
+        if (KEY_LISTVIEW_ANIMATION.equals(key)) {
+            int value = Integer.parseInt((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.PAC.putInt(getContentResolver(),
+                    Settings.PAC.LISTVIEW_ANIMATION,
+                    value);
+            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
+        }
+        if (KEY_LISTVIEW_INTERPOLATOR.equals(key)) {
+            int value = Integer.parseInt((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.PAC.putInt(getContentResolver(),
+                    Settings.PAC.LISTVIEW_INTERPOLATOR,
+                    value);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
         }
         if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
             int value = Integer.parseInt((String) objValue);
