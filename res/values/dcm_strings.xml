@@ -1027,4 +1027,9 @@
     <string name="default_sound_pack">Default (System)</string>
     <string name="error_pack_install">Error while installing the sound pack</string>
 
+    <!-- Volume panel background color && transparency -->
+    <string name="volume_panel_bg_color_title">Volume panel BG color</string>
+    <string name="trds_default_color">Default</string>
+    <string name="reset_default_message">Reset default</string>
+
 </resources>
