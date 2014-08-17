@@ -565,6 +565,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             updateNavbarPreferences((Boolean) value);
             if (value) {
                 enableKeysPrefs();
+                updateDisableNavkeysOption();
             } else {
                 resetKeys();
             }
@@ -604,11 +605,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         editor.commit();
     }*/
 
-    /*private void updateDisableNavkeysOption() {
+    // Restore this method change value of boolean enabled
+    // to work in Oneplus One
+    private void updateDisableNavkeysOption() {
         boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+                Settings.System.NAVIGATION_BAR_SHOW, 0) != 0;
 
-        mDisableNavigationKeys.setChecked(enabled);
+        mEnableNavigationBar.setChecked(enabled);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -625,7 +628,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
 
         // Toggle backlight control depending on navbar state, force it to
-           off if enabling
+        // off if enabling
         if (backlight != null) {
             backlight.setEnabled(!enabled);
         }
@@ -645,7 +648,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
     }
 
-    public static void restoreKeyDisabler(Context context) {
+    /*public static void restoreKeyDisabler(Context context) {
         if (!isKeyDisablerSupported()) {
             return;
         }
