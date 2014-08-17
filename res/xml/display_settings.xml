@@ -227,6 +227,13 @@
                 android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
                 android:title="@string/gesture_anywhere_title" />
 
+            <!-- OverScroll effects -->
+            <PreferenceScreen
+                android:key="overscroll_effects"
+                android:title="@string/ui_overscroll_title"
+                android:summary="@string/overscroll_weight_summary"
+                android:fragment="com.android.settings.crdroid.OverscrollEffects" />
+
             <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
