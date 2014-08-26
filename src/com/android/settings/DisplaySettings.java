@@ -91,8 +91,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DISPLAY_COLOR = "color_calibration";
     private static final String KEY_DISPLAY_GAMMA = "gamma_tuning";
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
-    private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
-    private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
@@ -109,7 +107,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
     private CheckBoxPreference mScreenOffAnimation;
     private ListPreference mScreenAnimationStylePreference;
-    private CheckBoxPreference mSmartCoverWake;
     private ListPreference mToastAnimation;
 
     private PreferenceScreen mNotificationPulse;
@@ -302,14 +299,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         } else {
             advancedPrefs.removePreference(mScreenAnimationStylePreference);
-        }
-
-        mSmartCoverWake = (CheckBoxPreference) findPreference(PREF_SMART_COVER_WAKE);
-        mSmartCoverWake.setOnPreferenceChangeListener(this);
-        if(!getResources().getBoolean(com.android.internal.R.bool.config_lidControlsSleep)) {
-            PreferenceCategory smartCoverOptions = (PreferenceCategory)
-                    getPreferenceScreen().findPreference(PREF_SMART_COVER_CATEGORY);
-            getPreferenceScreen().removePreference(smartCoverOptions);
         }
 
         boolean hasNotificationLed = res.getBoolean(
@@ -677,10 +666,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen animation style setting", e);
             }
-        } else if (preference == mSmartCoverWake) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.LOCKSCREEN_LID_WAKE, (Boolean) objValue ? 1 : 0);
-            return true;
         } else if (preference == mToastAnimation) {
             int index = mToastAnimation.findIndexOfValue((String) objValue);
             Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
