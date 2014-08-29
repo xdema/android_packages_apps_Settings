@@ -194,13 +194,6 @@
                 android:fragment="com.android.settings.crdroid.AppSidebar"
                 android:title="@string/app_sidebar_title"/>
 
-            <!-- Circle sidebar -->
-            <PreferenceScreen
-                android:id="@+id/app_circle_sidebar"
-                android:title="@string/app_circle_bar_title"
-                android:summary="@string/app_circle_sidebar_summary_real"
-                android:fragment="com.android.settings.mahdi.omni.AppCircleSidebar" />
-
             <!-- Gesture anywhere -->
             <PreferenceScreen
                 android:key="gesture_anywhere"
