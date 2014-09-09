@@ -1031,5 +1031,6 @@
     <string name="volume_panel_bg_color_title">Volume panel BG color</string>
     <string name="trds_default_color">Default</string>
     <string name="reset_default_message">Reset default</string>
+    <string name="qs_style_reset_message">Reset all colors to default?</string>
 
 </resources>
