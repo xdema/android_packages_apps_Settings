@@ -1030,4 +1030,8 @@
     <string name="reset_default_message">Reset default</string>
     <string name="qs_style_reset_message">Reset all colors to default?</string>
 
+    <!-- Quicksettings panel floating window -->
+    <string name="title_floating_window">Floating window</string>
+    <string name="summary_floating_window">Open Quick Settings tiles in floating window</string>
+
 </resources>
