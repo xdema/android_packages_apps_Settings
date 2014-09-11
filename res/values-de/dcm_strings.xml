@@ -2,10 +2,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, DarkCM version -->
-    <string name="dcm_version_title">DarkCM</string>
-    <string name="dcm_version_default">2.00</string>
-
     <!-- General strings -->
     <string name="attention">Achtung</string>
     <string name="default_string">Voreinstellung</string>
@@ -118,7 +114,7 @@
 
     <!-- Lock before unlock -->
     <string name="lock_before_unlock_title">Zeige Schieber vor dem entsperren</string>
-    <string name="lock_before_unlock_summary">Zeige Schieber auf Sperrbildschirm vor sicherer Entriegelung/string>
+    <string name="lock_before_unlock_summary">Zeige Schieber auf Sperrbildschirm vor sicherer Entriegelung</string>
 
     <!--  Recent clear all -->
     <string name="recent_clear_all_button">Alles zuletzt geöffnettes entfernen</string>
@@ -130,10 +126,10 @@
     <string name="recent_clear_all_button_location_top_right">Oben rechts</string>
     <string name="recent_clear_all_button_location_bottom_left">Unten links</string>
     <string name="recent_clear_all_button_location_bottom_right">Unten rechts</string>
-    
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farben auswählen</string>
-    <string name="press_color_to_apply">Tippen Sie auf eine Farbe für die Auswahl/string>
+    <string name="press_color_to_apply">Tippen Sie auf eine Farbe für die Auswahl</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -160,7 +156,7 @@
     <string name="ram_bar_button_help">Hilfe</string>
     <string name="ram_bar_button_reset">Farbe zurücksetzen</string>
     <string name="ram_bar_reset">Zurücksetzen</string>
-    <string name="ram_bar_reset_message">RAM Anzeige und zuletzt gewählte Farben dafür auf Standard setzen?</string>    
+    <string name="ram_bar_reset_message">RAM Anzeige und zuletzt gewählte Farben dafür auf Standard setzen?</string>
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Background style</string>
@@ -174,7 +170,7 @@
     <string name="notif_wallpaper_alpha_title">Background transparency</string>
     <string name="notif_alpha_title">Notification transparency</string>
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
-   
+
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Uhr und Datum</string>
     <string name="status_bar_clock_title">Clock and date style</string>
@@ -206,8 +202,5 @@
     <string name="clock_date_style_uppercase">Groß</string>
     <string name="clock_date_format_custom">Benutzerdefinierte Java Format</string>
     <string name="status_bar_clock_style_reset_message">Farbe der Uhr zurücksetzen</string>
-    
 
 </resources>
-    
-    
