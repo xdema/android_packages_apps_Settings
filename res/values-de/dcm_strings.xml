@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, DarkCM version -->
+    <string name="dcm_version_title">DarkCM</string>
+    <string name="dcm_version_default">2.00</string>
+
+    <!-- General strings -->
+    <string name="attention">Achtung</string>
+    <string name="default_string">Voreinstellung</string>
+    <string name="recent_panel_settings_title" >Recent panel settings</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="ok">OK</string>
+    <string name="enabled">Aktiviert</string>
+    <string name="disabled">Deaktiviert</string>
+    <string name="note">Mitteilung</string>
+
+    <!-- Advanced settings -->
+    <string name="advanced_options_settings_title">Erweiterte Einstellungen</string>
+
+    <!-- TRDS -->
+    <string name="theme_settings_title">Dark Mode</string>
+    <string name="theme_auto_mode_title">Theme Schalter</string>
+    <string name="theme_auto_mode_off">Manuell</string>
+    <string name="theme_auto_mode_lightsensor">An Dämmerung anpassen</string>
+    <string name="theme_auto_mode_twilight">An Tageszeit anpassen</string>
+    <string name="theme_auto_switch_mode_error">Automatische Helligkeitsänderung ist aktiviert. Manuelles Einschalten ist nicht möglich.</string>
+
+    <!-- TRDS tile -->
+    <string name="title_tile_theme">Theme Schalter</string>
+
+    <!-- crDroid notifications -->
+    <string name="crdroid_notifications_title">Benachrichtigungs Dienste</string>
+
+    <!-- Halo -->
+    <!-- Halo enable/disable -->
+    <string name="halo_active_title">Halo Schalter</string>
+    <string name="halo_active_summary">Check to enable or un-check to disable halo</string>
+
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Halo Verhalten</string>
+    <string name="halo_hide_title">Halo nach Aktivität verstecken</string>
+    <string name="halo_hide_summary">Halo wird für eingehende Aufgaben erscheinen und nach einer Weile wieder verschwinden</string>
+    <string name="halo_state_title">Halo Politik</string>
+    <string name="halo_state_summary">Ermöglicht schwarz/weiß Benachrichtigungsauflistung</string>
+    <string name="halo_state_black">Schwarze Liste</string>
+    <string name="halo_state_white">Weiße Liste</string>
+    <string name="halo_pause_title">Pause aktiv app</string>
+    <string name="halo_pause_summary">Beim Öffnen einer App mit Halo wird die zugrunde liegende App angehalten</string>
+    <string name="halo_notification_msgbox_title">Aktivieren Sie Pop-up Nachricht</string>
+    <string name="halo_notification_msgbox_summary">Zeige Nachricht Box für eingehende Benachrichtigungen</string>
+    <string name="halo_unlock_ping_title">Ton bei entsperren</string>
+    <string name="halo_unlock_ping_summary">Halo ertönt, wenn neue Mitteilungen bei entsperrtem Gerät eingehen.</string>
+
+    <string name="halo_size_title">Halo Größe</string>
+    <string name="halo_size_summary">Definiert, wie groß Halo sein wird</string>
+    <string name="halo_size_miniscule">Klein</string>
+    <string name="halo_size_small">Schmall</string>
+    <string name="halo_size_default">Normal (Voreinstellung)</string>
+    <string name="halo_size_large">Groß</string>
+    <string name="halo_size_gigantic">Größer</string>
+    <string name="halo_size_monster">Am Größten</string>
+
+    <string name="halo_notification_count_title">Benachrichtigung Zahl</string>
+    <string name="halo_notification_count_summary">Anzeigebenachrichtigungzähler von Halo</string>
+    <string name="halo_notification_count_none">Keine</string>
+    <string name="halo_notification_count_total">Gesamt</string>
+    <string name="halo_notification_count_individual">Pro Anwendung</string>
+    <string name="halo_notification_count_both">Beides</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Schwarze Liste von Halo</string>
+    <string name="app_halo_label_white">Weiße Liste von Halo</string>
+
+    <!-- QS and navring Power menu -->
+    <string name="title_tile_power">Power Menu</string> 
+    <string name="navring_action_power_menu">Power menu</string>       
+    <!-- QS and navring last app -->
+    <string name="navring_action_last_app">Letzte Anwendung</string>
+
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar">Navigationsleiste aktivieren</string>
+    <string name="navbar_enable_bar_summary">Aktivieren Sie die Navigationsleiste</string>
+    <string name="navbar_style_dimen_title">Größe</string>
+    <string name="navbar_dimensions_reset_message">Alle Einträge auf Standard setzen?</string>
+    <string name="navigation_bar_height_title">Höhe Navigationsleiste</string>
+    <string name="navigation_bar_height_summary">Höhe Navigationsleiste Portrait</string>
+    <string name="navigation_bar_width_title">Breite Navigationsleiste</string>
+    <string name="navigation_bar_width_summary">Höhe Navigationsleiste wenn die Balken entlang einer Seite</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (Voreinstellung)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (Voreinstellung)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (aus)</string>
+
+    <!-- Low battery warning policy -->
+    <string name="pref_low_battery_warning_policy_title">Batteriewarnung</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Batteriewarnung anzeigen mit</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up und Ton</string>
+    <string name="low_battery_warning_policy_notif_sound">Benachrichtugung und Ton</string>
+    <string name="low_battery_warning_policy_popup">Nur Pop-up Dialog</string>
+    <string name="low_battery_warning_policy_notif">Nur Benachrichtigung</string>
+    <string name="low_battery_warning_policy_sound">Nur Ton</string>
+    <string name="battery_prefs_title">Einstellung</string>
+    <string name="battery_stats_title">Statistik</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Ändern der Reihenfolge der PIN Zahlen</string>
+    <string name="lock_numpad_random_dialog_title">PIN in zufälliger Reihenfolge</string>
+    <string name="lock_numpad_random_off">Deaktivieren</string>
+    <string name="lock_numpad_random_always">Immer</string>
+    <string name="lock_numpad_random_on_request">Auf Anfrage</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Zeige Schieber vor dem entsperren</string>
+    <string name="lock_before_unlock_summary">Zeige Schieber auf Sperrbildschirm vor sicherer Entriegelung/string>
+
+    <!--  Recent clear all -->
+    <string name="recent_clear_all_button">Alles zuletzt geöffnettes entfernen</string>
+    <string name="show_recent_clear_all_button_title">Zeige alles geöffnete</string>
+    <string name="show_recent_clear_all_button_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
+    <string name="recent_clear_all_button_location_title">Löschen Sie alle Tastenpositionen</string>
+    <string name="recent_clear_all_button_location_summary">Wo soll die Schaltfläche angezeigt werden?</string>
+    <string name="recent_clear_all_button_location_top_left">Oben links</string>
+    <string name="recent_clear_all_button_location_top_right">Oben rechts</string>
+    <string name="recent_clear_all_button_location_bottom_left">Unten links</string>
+    <string name="recent_clear_all_button_location_bottom_right">Unten rechts</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Farben auswählen</string>
+    <string name="press_color_to_apply">Tippen Sie auf eine Farbe für die Auswahl/string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Voreinstellung</string>
+
+    <!-- Recent Ram Bar -->
+    <string name="ram_bar">Recent RAM bar</string>
+    <string name="ram_bar_note_title">Note</string>
+    <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster.</string>
+    <string name="ram_bar_mode_title">Recent RAM bar mode</string>
+    <string name="ram_bar_mode_dialog_title">Show on recent RAM bar</string>
+    <string name="ram_bar_none">None</string>
+    <string name="ram_bar_apps">Anwendungen</string>
+    <string name="ram_bar_cache">Anwendungen und Cache</string>
+    <string name="ram_bar_other">Anwendungen, Cache und Andere</string>
+    <string name="ram_bar_style_cat">Letzte Stil für Speicheranzeige</string>
+    <string name="ram_bar_color_app_mem_color">Farbe Anwendungen Speicher</string>
+    <string name="ram_bar_color_cache_mem_color">Farbe Cache Speicher</string>
+    <string name="ram_bar_color_total_mem_color">Farbe anderer Speicher</string>
+    <string name="ram_bar_color_enabled">Aktivieren</string>
+    <string name="ram_bar_color_disabled">Deaktivieren</string>
+    <string name="ram_bar_button_help">Hilfe</string>
+    <string name="ram_bar_button_reset">Farbe zurücksetzen</string>
+    <string name="ram_bar_reset">Zurücksetzen</string>
+    <string name="ram_bar_reset_message">RAM Anzeige und zuletzt gewählte Farben dafür auf Standard setzen?</string>    
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Background style</string>
+    <string name="notification_style_summary">Change your notification drawer background style</string>
+    <string name="notification_wallpaper_title">Background</string>
+    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
+    <string name="notification_background_color_fill">Color fill</string>
+    <string name="notification_background_custom_image">Custom image</string>
+    <string name="notification_background_default_wallpaper">Default background</string>
+    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
+    <string name="notif_wallpaper_alpha_title">Background transparency</string>
+    <string name="notif_alpha_title">Notification transparency</string>
+    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
+   
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Uhr und Datum</string>
+    <string name="status_bar_clock_title">Clock and date style</string>
+    <string name="clock_title_enable">Ausrichtung</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_show_clock_title">Zeige Uhrzeit und Datum</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-Stunden Anzige ist aktiviert</string>
+    <string name="enable_clock_weekday">Tag der Woche</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="right_clock">Uhr rechts</string>
+    <string name="center_clock">Uhr mittig</string>
+    <string name="dont_show">Nicht anzeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date Aussehen</string>
+    <string name="clock_date_format">Date Format</string>
+    <string name="clock_date_string_edittext_title">Datumsformat muss MM/dd/yy sein</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Schmalle Schriftgröße</string>
+    <string name="am_pm_clock_none">Nicht anzeigen</string>
+    <string name="clock_date_display_none">Nicht anzeigen</string>
+    <string name="clock_date_display_small">Schmalle Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Klein</string>
+    <string name="clock_date_style_uppercase">Groß</string>
+    <string name="clock_date_format_custom">Benutzerdefinierte Java Format</string>
+    <string name="status_bar_clock_style_reset_message">Farbe der Uhr zurücksetzen</string>
+    
+
+</resources>
+    
+    
