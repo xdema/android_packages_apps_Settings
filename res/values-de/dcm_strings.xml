@@ -170,38 +170,6 @@
     <string name="notif_wallpaper_alpha_title">Background transparency</string>
     <string name="notif_alpha_title">Notification transparency</string>
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
-
-    <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Uhr und Datum</string>
-    <string name="status_bar_clock_title">Clock and date style</string>
-    <string name="clock_title_enable">Ausrichtung</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_show_clock_title">Zeige Uhrzeit und Datum</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-Stunden Anzige ist aktiviert</string>
-    <string name="enable_clock_weekday">Tag der Woche</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Uhr rechts</string>
-    <string name="center_clock">Uhr mittig</string>
-    <string name="dont_show">Nicht anzeigen</string>
-    <string name="clock_date_display">Datum</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date Aussehen</string>
-    <string name="clock_date_format">Date Format</string>
-    <string name="clock_date_string_edittext_title">Datumsformat muss MM/dd/yy sein</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
-    <string name="am_pm_clock_small">Schmalle Schriftgröße</string>
-    <string name="am_pm_clock_none">Nicht anzeigen</string>
-    <string name="clock_date_display_none">Nicht anzeigen</string>
-    <string name="clock_date_display_small">Schmalle Schriftgröße</string>
-    <string name="clock_date_display_normal">Normale Schriftgröße</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Klein</string>
-    <string name="clock_date_style_uppercase">Groß</string>
-    <string name="clock_date_format_custom">Benutzerdefinierte Java Format</string>
-    <string name="status_bar_clock_style_reset_message">Farbe der Uhr zurücksetzen</string>
     
     <!-- Heads-up disable on lockscreen -->
     <string name="heads_up_exclude_from_lock_screen">Auf dem Sperrbildschirm deaktivieren</string>    
