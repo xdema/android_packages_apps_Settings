@@ -202,5 +202,29 @@
     <string name="clock_date_style_uppercase">Groß</string>
     <string name="clock_date_format_custom">Benutzerdefinierte Java Format</string>
     <string name="status_bar_clock_style_reset_message">Farbe der Uhr zurücksetzen</string>
+    
+    <!-- Heads-up disable on lockscreen -->
+    <string name="heads_up_exclude_from_lock_screen">Auf dem Sperrbildschirm deaktivieren</string>    
+    
+    <!-- SmoothProgressBar -->
+    <string name="progressbar_title">Induviduelle Fortschrittsanzeige</string>
+    <string name="progressbar_mirror_title">Spiegel</string>
+    <string name="progressbar_reverse_title">Umgekehrt</string>
+    <string name="progressbar_speed_title">Geschwindigkeit</string>
+    <string name="progressbar_width_title">Strichbreite</string>
+    <string name="progressbar_length_title">Trennlänge</string>
+    <string name="progressbar_count_title">Abschnitte</string>
+    <string name="progressbar_color_1_title">Farbe 1</string>
+    <string name="progressbar_color_2_title">Farbe 2</string>
+    <string name="progressbar_color_3_title">Farbe 3</string>
+    <string name="progressbar_color_4_title">Farbe 4</string>
+    <string name="sample_progressbar_text">Fortschrittsanzeige: Vorschau</string>
+    <string name="progressbar_interpolator">Interpolator</string>
+    <string name="progressbar_none">Keine</string>
+    <string name="progressbar_acclerate">Beschleunigen/string>
+    <string name="progressbar_linear">Linear</string>
+    <string name="progressbar_acceleratedecelerate"><B>Beschleunigen verzögern</B></string>
+    <string name="progressbar_decelerate">Verlangsamen</string>
+    <string name="progressbar_reset_message">Zurücksetzen der Fortschrittsanzeige auf Voreinstellung?</string>    
 
 </resources>
