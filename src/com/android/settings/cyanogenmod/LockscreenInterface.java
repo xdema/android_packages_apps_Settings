@@ -17,6 +17,7 @@
 package com.android.settings.cyanogenmod;
 
 import android.app.admin.DevicePolicyManager;
+import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -25,6 +26,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -57,6 +59,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
     private static final String KEY_DISABLE_FRAME = "lockscreen_disable_frame";
     private static final String KEY_LOCKSCREEN_MUSIC_CONTROLLER ="keyguard_enable_musiccontroller";
+    private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
 
     private static final int DLG_ALL_WIDGETS = 0;
 
@@ -70,6 +73,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private CheckBoxPreference mLockBeforeUnlock;
     private CheckBoxPreference mDisableFrame;
     private CheckBoxPreference mLockscreenMusicController;
+    private CheckBoxPreference mEnablePowerMenu;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
     private LockPatternUtils mLockUtils;
@@ -126,6 +130,12 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Lock before Unlock
         mLockBeforeUnlock = (CheckBoxPreference) findPreference(LOCK_BEFORE_UNLOCK);
+
+        // Enable / disable power menu on lockscreen
+        mEnablePowerMenu = (CheckBoxPreference) findPreference(KEY_ENABLE_POWER_MENU);
+        mEnablePowerMenu.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1) == 1);
+        mEnablePowerMenu.setOnPreferenceChangeListener(this);
         
         // Enable or disable camera widget based on device and policy
         if (Camera.getNumberOfCameras() == 0) {
@@ -246,6 +256,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 	    boolean value = mLockscreenMusicController.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_MUSIC_SWITCH, value ? 1 : 0);
+            return true;
+        } else if (preference == mEnablePowerMenu) {
+            boolean newValue = (Boolean) value;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, newValue ? 1 : 0);
             return true;
         } else if (preference == mLockBeforeUnlock) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.LOCK_BEFORE_UNLOCK,
