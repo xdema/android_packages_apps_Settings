@@ -257,11 +257,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_MUSIC_SWITCH, value ? 1 : 0);
             return true;
-        } else if (preference == mEnablePowerMenu) {
-            boolean newValue = (Boolean) value;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, newValue ? 1 : 0);
-            return true;
         } else if (preference == mLockBeforeUnlock) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.LOCK_BEFORE_UNLOCK,
                     mLockBeforeUnlock.isChecked() ? 1 : 0);
@@ -291,6 +286,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_WIDGET_FRAME_ENABLED,
                     (Boolean) objValue ? 1 : 0);
+            return true;
+        } else if (preference == mEnablePowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, value ? 1 : 0);
             return true;
         } else if (preference == mAllWidgets) {
             final boolean checked = (Boolean) objValue;
