@@ -158,22 +158,9 @@
     <string name="ram_bar_reset">Zurücksetzen</string>
     <string name="ram_bar_reset_message">RAM Anzeige und zuletzt gewählte Farben dafür auf Standard setzen?</string>
 
-    <!-- Notification drawer background -->
-    <string name="notification_style_title">Background style</string>
-    <string name="notification_style_summary">Change your notification drawer background style</string>
-    <string name="notification_wallpaper_title">Background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Background transparency</string>
-    <string name="notif_alpha_title">Notification transparency</string>
-    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
-    
     <!-- Heads-up disable on lockscreen -->
-    <string name="heads_up_exclude_from_lock_screen">Auf dem Sperrbildschirm deaktivieren</string>    
-    
+    <string name="heads_up_exclude_from_lock_screen">Auf dem Sperrbildschirm deaktivieren</string>
+
     <!-- SmoothProgressBar -->
     <string name="progressbar_title">Induviduelle Fortschrittsanzeige</string>
     <string name="progressbar_mirror_title">Spiegel</string>
@@ -189,10 +176,10 @@
     <string name="sample_progressbar_text">Fortschrittsanzeige: Vorschau</string>
     <string name="progressbar_interpolator">Interpolator</string>
     <string name="progressbar_none">Keine</string>
-    <string name="progressbar_acclerate">Beschleunigen/string>
+    <string name="progressbar_acclerate">Beschleunigen</string>
     <string name="progressbar_linear">Linear</string>
-    <string name="progressbar_acceleratedecelerate"><B>Beschleunigen verzögern</B></string>
+    <string name="progressbar_acceleratedecelerate">Beschleunigen verzögern</string>
     <string name="progressbar_decelerate">Verlangsamen</string>
-    <string name="progressbar_reset_message">Zurücksetzen der Fortschrittsanzeige auf Voreinstellung?</string>    
+    <string name="progressbar_reset_message">Zurücksetzen der Fortschrittsanzeige auf Voreinstellung?</string>
 
 </resources>
