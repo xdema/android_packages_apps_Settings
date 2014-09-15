@@ -3,13 +3,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, DarkCM version -->
-    <string name="dcm_version_title">DarkCM</string>
-    <string name="dcm_version_default">3.00</string>
+    <string name="dcm_version_title">DarkCyanogenMod version</string>
+    <string name="dcm_version_default">4.00</string>
 
     <!-- General strings -->
     <string name="attention">Attention</string>
     <string name="default_string">Default</string>
-    <string name="recent_panel_settings_title" >Recent panel settings</string>
+    <string name="recent_panel_settings_title">Recent panel settings</string>
     <string name="reset">Reset</string>
     <string name="ok">OK</string>
     <string name="enabled">Enabled</string>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, DarkCM version -->
+    <string name="dcm_version_title">Versione DarkCyanogenMod</string>
+
+    <!-- General strings -->
+    <string name="attention">Attenzione</string>
+    <string name="default_string">Default</string>
+    <string name="recent_panel_settings_title" >Impostazioni Recent panel</string>
+    <string name="reset">Reset</string>
+    <string name="ok">OK</string>
+    <string name="enabled">Attivato</string>
+    <string name="disabled">Disattivato</string>
+    <string name="note">NOTA</string>
+
+    <!-- Advanced settings -->
+    <string name="advanced_options_settings_title">Opzioni avanzate</string>
+
+    <!-- TRDS -->
+    <string name="theme_settings_title">Modalità scura TRDS</string>
+    <string name="theme_auto_mode_title">Cambia modalità</string>
+    <string name="theme_auto_mode_off">Manuale</string>
+    <string name="theme_auto_mode_lightsensor">In base ai cambiamenti di luce</string>
+    <string name="theme_auto_mode_twilight">In base all\'orario</string>
+    <string name="theme_auto_switch_mode_error">La modalità automatica basata sulla luce è attiva. La commutazione manuale non è disponibile.</string>
+
+    <!-- TRDS tile -->
+    <string name="title_tile_theme">Cambio tema</string>
+
+    <!-- crDroid notifications -->
+    <string name="crdroid_notifications_title">Servizi Notifica</string>
+
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar">Attiva barra navigazione</string>
+    <string name="navbar_enable_bar_summary">Attiva la barra di navigazione</string>
+    <string name="navbar_style_dimen_title">Dimensioni</string>
+    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navbar_dimensions_reset_message">Resettare tutte le dimensioni a default?</string>
+    <string name="navigation_bar_height_summary">Altezza barra navigazione quando in modalità portrait</string>
+    <string name="navigation_bar_width_title">Larghezza barra navigazione</string>
+    <string name="navigation_bar_width_summary">Larghezza della barra quando questa è posta su un lato dello schermo</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+
+    <!-- Low battery warning policy -->
+    <string name="low_battery_warning_policy_title">Avviso batteria scarica</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up e suono</string>
+    <string name="low_battery_warning_policy_notif_sound">Notifica e suono</string>
+    <string name="low_battery_warning_policy_popup">Solo pop-up</string>
+    <string name="low_battery_warning_policy_notif">Solo notifica</string>
+    <string name="low_battery_warning_policy_sound">Solo suono</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri del PIN pad</string>
+    <string name="lock_numpad_random_dialog_title">Ordine casuale PIN pad</string>
+    <string name="lock_numpad_random_off">Disattivato</string>
+    <string name="lock_numpad_random_always">Sempre</string>
+    <string name="lock_numpad_random_on_request">Su richiesta</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Mostra slider prima dello sblocco</string>
+    <string name="lock_before_unlock_summary">Mostra lo slider della lockscreen prima del meccanismo di sblocco</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Cattura colore</string>
+    <string name="press_color_to_apply">Premere sul colore sottostante per applicare</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Default</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Stile sfondo</string>
+    <string name="notification_style_summary">Visualizza o cambia lo sfondo del pannello delle notifiche e dei Quick Settings</string>
+    <string name="notification_wallpaper_title">Sfondo</string>
+    <string name="notification_wallpaper_landscape_title">Sfondo modalità landscape</string>
+    <string name="notification_background_color_fill">Colore riempimento</string>
+    <string name="notification_background_custom_image">Immagine personalizzata</string>
+    <string name="notification_background_default_wallpaper">Sfondo default</string>
+    <string name="notification_drawer_custom_background_dialog_title">Scegli colore</string>
+    <string name="notif_wallpaper_alpha_title">Trasparenza sfondo</string>
+    <string name="notif_alpha_title">Trasparenza notifica</string>
+    <string name="shortcut_image_not_valid">L\'app selezionata non ha fornito un\'icona valida o non supporta il ritaglio immagine. Usane un\'altra.</string>
+
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Timeout pannello volume</string>
+    <string name="volume_panel_timeout_summary">Timeout fino alla scomparsa del pannello volume</string>
+
+    <!-- Extra display settings -->
+    <string name="extra_display_settings_title">Altre impostazioni schermo</string>
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Registra schermo</string>
+    <string name="screen_recorder_summary">Regola impostazioni registra schermo</string>
+    <string name="screen_recorder_video_dimensions_title">Dimensioni video</string>
+    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+    <string name="screen_recorder_record_audio_title">Registra audio</string>
+    <string name="screen_recorder_record_audio_summary">Registra audio da microfono</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
+
+    <!-- Power menu screen recorder -->
+    <string name="power_menu_screenrecord_title">Registra schermo</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportamento MediaScanner all\'avvio</string>
+    <string name="media_scanner_on_boot_enabled">Scansiona media</string>
+    <string name="media_scanner_on_boot_ask">Notifica e chiedi se scansionare media</string>
+    <string name="media_scanner_on_boot_disabled">Non scansionare media</string>
+
+    <!-- Notification Reminders -->
+    <string name="noti_reminder_title">Notifica promemoria</string>
+    <string name="noti_reminder_enable_title">Attiva notifica promemoria</string>
+    <string name="noti_reminder_sound_title">Suono di notifica</string>
+    <string name="noti_reminder_sound_looping">Fino all\'annullamento</string>
+    <string name="noti_reminder_ringtone">Suoneria</string>
+    <string name="noti_reminder_summary">Entra con una notifica e imposta promemoria per la stessa</string>
+    <string name="noti_reminder_interval">Visualizzazione intermittente promemoria</string>
+    <string name="noti_reminder_interval_1s">1 secondo</string>
+    <string name="noti_reminder_interval_1dot5s">1.5 secondi</string>
+    <string name="noti_reminder_interval_2s">2 secondi</string>
+    <string name="noti_reminder_interval_2dot5s">2.5 secondi</string>
+    <string name="noti_reminder_interval_3s">3 secondi</string>
+    <string name="noti_reminder_interval_3dot5s">3.5 secondi</string>
+    <string name="noti_reminder_interval_4s">4 secondi</string>
+
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Comparsa intelligente Quick Settings</string>
+    <string name="smart_pulldown_summary">Apri i Quick Settings quando non sono presenti notifiche %1$s</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_dismissable">Eliminabili</string>
+    <string name="smart_pulldown_persistent">Persistenti</string>
+    <string name="smart_pulldown_all">Eliminabili o persistenti</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Botoni Fisici</string>
+    <string name="key_menu_enabled">Botone menu attivato</string>
+    <string name="key_back_enabled">Botone indietro attivato</string>
+    <string name="key_home_enabled">Botone home attivato</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Opzioni avanzate</string>
+    <string name="disable_fullscreen_keyboard_title">Disattiva tastiera a schermo intero</string>
+    <string name="disable_fullscreen_keyboard_summary">La tastiera in modalità landescape non riempirà lo schermo</string>
+    <string name="keyboard_rotation_toggle_title">Rotazione automatica tastiera</string>
+    <string name="keyboard_rotation_toggle_summary">Forza la rotazione automatica se è visualizzata la tastiera</string>
+    <string name="keyboard_rotation_timeout_title">Timeout rotazione automatica</string>
+    <string name="keyboard_rotation_timeout_summary">Disattiva il sensore di rotazione <xliff:g id="rotate_timeout">%1$s</xliff:g> secondi dopo la scomparsa della tastiera</string>
+    <string name="keyboard_rotation_dialog">Questa funzione attiva la rotazione automatica durante la visualizzazione della tastiera. Non ha effetti quando la rotazione automatica è attivata</string>
+    <string name="show_enter_key_title">Mostra pulsante Invio</string>
+    <string name="show_enter_key_summary">Forza la tastiera a mostrare il pulsante Invio anzichè quello per le emoticons</string>
+
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Cambiare stili recenti</string>
+    <string name="custom_recent_summary">Spuntare su Slim recenti o deselezionare per stock recenti. SPUNTARE O DESELEZIONARE QUESTO FARÀ RIAVVIARE IL TUO SYSTEMUI</string>
+
+    <!-- Recent panel -->
+    <string name="slim_recent_panel_category">Pannello apps recenti</string>
+    <string name="recent_panel_scale_title">Dimensione</string>
+    <string name="recent_panel_scale_summary">Dimensione pannello apps recenti in percentuale</string>
+    <string name="recent_panel_100">100% (default)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+    <string name="recent_panel_expanded_mode_title">Modalità espansa</string>
+    <string name="recent_panel_expanded_mode_summary">Modalità di espansione delle anteprime delle apps</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Sempre</string>
+    <string name="recent_panel_expanded_mode_never">Mai</string>
+    <string name="recent_panel_show_topmost_title">Modalità di espansione delle anteprime delle apps</string>
+    <string name="recent_panel_show_topmost_summary">Non esclude il task principale nel pannello delle apps recenti</string>
+    <string name="trds_default_color">TRDS predefinito</string>
+    <string name="recent_panel_bg_color_title">Colore sfondo pannello</string>
+    <string name="recent_card_bg_color_title">Colore sfondo schede</string>
+    <string name="recent_card_text_color_title">Colore testo schede</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
+    <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle apps recenti sul lato sinistro</string>
+
+    <!-- NavBar long press actions -->
+    <string name="navbar_long_press_title">Azioni premere a lungo</string>
+    <string name="recent_long_press_title">Recenti "azioni premere a lungo"</string>
+    <string name="recent_long_press_none">Niente</string>
+    <string name="recent_long_press_last_app">Ultima app</string>
+    <string name="recent_long_press_screenshot">Cattura schermo</string>
+    <string name="recent_long_press_kill_app">Kill app</string>
+    <string name="recent_long_press_notif_panel">Pannello di notifica</string>
+    <string name="recent_long_press_qs_panel">Pannello QS</string>
+    <string name="recent_long_press_power_menu">Menu power</string>
+
+    <!-- Notifications light with screen on -->
+    <string name="notification_light_screen_on_title">Mostra quando lo schermo è accesso</string>
+
+    <!-- Brightness Slider -->
+    <string name="notification_drawer_brightness_slider_title">Barra illuminazione</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Passaggi volume</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Sveglia</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Musica</string>
+    <string name="volume_steps_notification_title">Notifica</string>
+    <string name="volume_steps_ring_title">Suoneria</string>
+    <string name="volume_steps_system_title">Sistema</string>
+    <string name="volume_steps_voice_call_title">Chiamata</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Timeout lunga pressione</string>
+    <string name="timeout_2000">2 secondi (default)</string>
+    <string name="timeout_1500">1,5 secondi</string>
+    <string name="timeout_1000">1 secondo</string>
+    <string name="timeout_500">0,5 secondo</string>
+
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Disattiva frames widget</string>
+    <string name="lockscreen_widget_frame_summary">Disattiva lo sfondo per i riquadri dei widgets</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="haptic_qs_tiles_title">Vibra al tocco</string>
+    <string name="haptic_qs_tiles_summary">Vibra quando tocchi i tiles</string>
+
+    <!-- Button shorcut actions -->
+    <string name="shortcut_action_app">App personalizzata</string>
+    <string name="shortcut_action_home">Home</string>
+    <string name="shortcut_action_back">Indietro</string>
+    <string name="shortcut_action_recent">Recenti</string>
+    <string name="shortcut_action_lastapp">Ultima app</string>
+    <string name="shortcut_action_assist">Cerca</string>
+    <string name="shortcut_action_search">Cerca in app</string>
+    <string name="shortcut_action_voice_search">Ricerca vocale</string>
+    <string name="shortcut_action_screenshot">Screenshot</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Apri commutatore IME</string>
+    <string name="shortcut_action_kill">Termina app</string>
+    <string name="shortcut_action_power">Schermo Off</string>
+    <string name="shortcut_action_theme_switch">Cambia tema</string>
+    <string name="shortcut_action_notifications">Notifiche</string>
+    <string name="shortcut_action_menu_big">Menu</string>
+    <string name="shortcut_action_qs">Pannello Quick Settings</string>
+    <string name="shortcut_action_smart">Pulldown intelligente</string>
+    <string name="shortcut_action_none">Niente</string>
+    <string name="shortcut_action_power_menu">Menu Power</string>
+    <string name="shortcut_action_torch">Torcia</string>
+    <string name="shortcut_action_ring_vib">Squilla/Vibra</string>
+    <string name="shortcut_action_ring_silent">Squilla/Silenzia</string>
+    <string name="shortcut_action_camera">Fotocamera</string>
+    <string name="shortcut_action_media_next">Musica - Traccia successiva</string>
+    <string name="shortcut_action_media_play_pause">Musica - play/pausa</string>
+    <string name="shortcut_action_media_previous">Musica - Traccia precedente</string>
+    <string name="shortcut_action_wake_device">Risveglio dispositivo</string>
+    <string name="shortcut_action_ring_vib_silent">Squilla/Vibra/Silenzia</string>
+    <string name="shortcut_action_longpress">Pressione lunga:</string>
+    <string name="shortcut_action_select_action_longpress">Scegli azione per pressione lunga:</string>
+    <string name="shortcut_action_select_action">Scegli azione:</string>
+    <string name="shortcut_action_select_action_newbutton">Scegli nuova azione:</string>
+    <string name="shortcut_action_reset">Resetta</string>
+    <string name="shortcut_action_add">Aggiungi</string>
+    <string name="shortcut_action_reset_message">Resettare tutte le voci a default?</string>
+    <string name="shortcut_action_max">Raggiunto numero massimo voci</string>
+    <string name="shortcut_action_warning">Attenzione</string>
+    <string name="shortcut_action_warning_message">Non è possibile eliminare l\'ultima voce</string>
+    <string name="shortcut_action_disable_message">Disattivato\nAggiungi una voce per attivare la funzione</string>
+    <string name="shortcut_image_not_valid">L\'app selezionata non ha fornito un\'icona valida o non supporta il ritaglio immagine. Usane un\'altra.</string>
+    <string name="shortcut_duplicate_entry">L\'azione seguente non può essere aggiunta due volte</string>
+
+    <string name="shortcut_action_help_shortcut">collegamento</string>
+    <string name="shortcut_action_help_button">pulsante</string>
+    <string name="shortcut_action_help_app">app</string>
+    <string name="shortcut_action_help_icon">, mentre selezionando l\'icona appariranno le opzioni di personalizzazione</string>
+    <string name="shortcut_action_help_main">Per aggiungere un %1$s, selezionare l\'icona Aggiungi.  Dopo che un %1$s viene aggiunto, selezionare la riga per cambiare %2$s\n\nPer rimuovere un %1$s, trascina orizzontalmente la riga.  Riordina un %1$s nella lista trascinando verticalmente il punto di ancoraggio a sinistra.\n\nPer ripulire o resettare a default, seleziona l\'icona di Reset.</string>
+    <string name="shortcut_action_help_delete_last_entry">Rimuovere ogni %1$s nella lista disattiverà completamente la fuzione.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Rimuovere ogni %1$s nella lista disattiverà il secondo livello della Pie.</string>
+
+    <string name="shortcuts_icon_picker_alarm">Sveglia</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Batteria</string>
+    <string name="shortcuts_icon_picker_browser">Browser</string>
+    <string name="shortcuts_icon_picker_calendar">Calendario</string>
+    <string name="shortcuts_icon_picker_camera">Fotocamera</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">Contatto</string>
+    <string name="shortcuts_icon_picker_directdial">Composizione diretta</string>
+    <string name="shortcuts_icon_picker_directmessage">Messaggio diretto</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">Email</string>
+    <string name="shortcuts_icon_picker_email2">Email Alternativo</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favorito</string>
+    <string name="shortcuts_icon_picker_file_browser">File Browser</string>
+    <string name="shortcuts_icon_picker_file_browser2">File Browser Alternativo</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galleria</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Aiuto</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
+    <string name="shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="shortcuts_icon_picker_notes">Note</string>
+    <string name="shortcuts_icon_picker_luggage">Viaggio</string>
+    <string name="shortcuts_icon_picker_maps">Maps</string>
+    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_movie">Movies</string>
+    <string name="shortcuts_icon_picker_music">Musica</string>
+    <string name="shortcuts_icon_picker_nav">Navigazione</string>
+    <string name="shortcuts_icon_picker_phone">Telefono</string>
+    <string name="shortcuts_icon_picker_package">Pacchetto</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Quick Settings</string>
+    <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_search">Cerca</string>
+    <string name="shortcuts_icon_picker_sms">Messaggistica</string>
+    <string name="shortcuts_icon_picker_tasks">Tasks</string>
+    <string name="shortcuts_icon_picker_terminal">Terminale</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Sblocco</string>
+
+    <string name="icon_picker_type">Selezione il tipo di icona:</string>
+    <string name="icon_default">Default</string>
+    <string name="icon_presets">Icone di sistema</string>
+    <string name="icon_custom">Galleria</string>
+    <string name="icon_pack">Pacchetto icone</string>
+    <string name="icon_picker_choose_icon_title">Scegli icona</string>
+    <string name="icon_color_mode_all_icons">Tutte le icone</string>
+    <string name="icon_color_mode_system_icons">Icone di sistema</string>
+    <string name="icon_color_mode_system_custom_icons">Icone custom e di sistema</string>
+    <string name="group_applications">Applicazioni</string>
+    <string name="select_custom_app_title">Seleziona apps personalizzate</string>
+    <string name="shortcuts_text_color_title">Colore testo</string>
+    <string name="shortcuts_color_title">Colore icona</string>
+    <string name="shortcuts_color_mode_title">Modalità colore icona</string>
+    <string name="shortcuts_color_mode_summary">Cambia la modalità colore delle icone dei collegamenti</string>
+
+</resources>
