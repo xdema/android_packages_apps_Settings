@@ -2,10 +2,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, DarkCM version -->
-    <string name="dcm_version_title">DarkCM</string>
-    <string name="dcm_version_default">2.00</string>
-
     <!-- General strings -->
     <string name="attention">Achtung</string>
     <string name="default_string">Voreinstellung</string>
@@ -123,7 +119,7 @@
     <!--  Recent clear all -->
     <string name="recent_clear_all_button">Recent Schaltfläche alles löschen</string>
     <string name="show_recent_clear_all_button_title">Zeige Schaltfläche</string>
-    <string name="show_recent_clear_all_button_summary">Klicke um Schaltfläche für kürzlich geöffnette Anwendungen auf dem Bildschirm an- oder nicht anzuzeigen/string>
+    <string name="show_recent_clear_all_button_summary">Klicke um Schaltfläche für kürzlich geöffnette Anwendungen auf dem Bildschirm an- oder nicht anzuzeigen</string>
     <string name="recent_clear_all_button_location_title">Schaltflächen Position</string>
     <string name="recent_clear_all_button_location_summary">Wählen Sie in welcher Ecke die Schaltfläche für geöffnette Anwendungen angezeigt werden soll</string>
     <string name="recent_clear_all_button_location_top_left">Oben Links</string>
@@ -174,38 +170,6 @@
     <string name="notif_wallpaper_alpha_title">Background transparency</string>
     <string name="notif_alpha_title">Notification transparency</string>
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
-   
-    <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Uhr und Datum</string>
-    <string name="status_bar_clock_title">Uhr und Zeit Design</string>
-    <string name="clock_title_enable">Ausrichtung</string>
-    <string name="clock_enabled">Aktivieren</string>
-    <string name="clock_disabled">Deaktivieren</string>
-    <string name="status_bar_show_clock_title">Zeige Uhrzeit und Datum</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-Stunden Anzeige ist aktiviert</string>
-    <string name="enable_clock_weekday">Tag der Woche</string>
-    <string name="enable_clock_weekday_summary">Abgekürzt, Tag der Woche vor der Zeit</string>
-    <string name="right_clock">Uhr rechts</string>
-    <string name="center_clock">Uhr mittig</string>
-    <string name="dont_show">Nicht anzeigen</string>
-    <string name="clock_date_display">Datum</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Aussehen Datum</string>
-    <string name="clock_date_format">Format Datum</string>
-    <string name="clock_date_string_edittext_title">Datumsformat muss MM/dd/yy sein</string>
-    <string name="clock_date_string_edittext_summary">Eingabe String</string>
-    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
-    <string name="am_pm_clock_small">Schmalle Schriftgröße</string>
-    <string name="am_pm_clock_none">Nicht anzeigen</string>
-    <string name="clock_date_display_none">Nicht anzeigen</string>
-    <string name="clock_date_display_small">Schmalle Schriftgröße</string>
-    <string name="clock_date_display_normal">Normale Schriftgröße</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Klein</string>
-    <string name="clock_date_style_uppercase">Groß</string>
-    <string name="clock_date_format_custom">Benutzerdefiniertes Anzeige Format</string>
-    <string name="status_bar_clock_style_reset_message">Farbe der Uhr zurücksetzen</string>
 
     <!-- Volume pane timeout -->
     <string name="volume_panel_timeout_title">Lautstärke Regler Zeitlimit</string>
@@ -242,13 +206,12 @@
     <string name="excluded_apps_title">Ausgeschlossene Anwendungen</string>
     <string name="excluded_apps_summary">Ausgeschlossene Anwendungen werden nicht als Sperrbildschirm Benachrichtigungen anzeigent</string>
     <string name="notification_color">Benachrichtigung Hintergrundfarbe</string>
-
     <string name="notifications_on_lockscreen">Benachrichtigungen auf Sperrbildschirm</string>
     <string name="notifications_on_lockscreen_summary">Wählen Sie zwischen Verhaltensweisen um Benachrichtigungen auf dem Sperrbildschirm zu zeigen</string>
     <string name="notifications_on_lockscreen_warning_summary">Bei jeden Benachrichtigungen auf dem Sperrbildschirm unter (PEEK und/oder SPERRBILDSCHIRM MELDUNGEN) werden automatisch die anderen deaktiviert. Stellen Sie sicher, dass Sie eine von ihnen deaktiviert ist, wenn Sie eine dieser Funktionen wieder verwenden möchten.</string>
 
     <!--Notification peek-->
-    <string name="notification_peek_title">Benachrichtigung  peek</string>
+    <string name="notification_peek_title">Benachrichtigung peek</string>
     <string name="notification_peek_summary">Zeige neueste Meldung nach Ernte Ihres Gerätes</string>
     <string name="peek_wake_timeout_title">Peek wake timeout</string>
     <string name="peek_pickup_timeout_title">Peek pickup timeout</string>
