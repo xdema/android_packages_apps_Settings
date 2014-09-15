@@ -470,12 +470,12 @@
     <string name="status_bar_network_title">Traffico di rete</string>
     <string name="status_bar_show_network_stats_title">Mostra la velocità di rete</string>
     <string name="status_bar_network_stats_update_title">Frequenza di aggiornamento</string>
-    <string name="hide_network_speed">Nascondi quando non c'è traffico</string>
-    <string name="hide_network_speed_summary">Nascondi indicatore quando non c'è traffico di rete</string>
+    <string name="hide_network_speed">Nascondi quando non c\'è traffico</string>
+    <string name="hide_network_speed_summary">Nascondi indicatore quando non c\'è traffico di rete</string>
 
     <!-- Custom notification panel header -->
     <string name="custom_statusbar_header_title">Intestazione del pannello di notifica contestuale</string>
-    <string name="custom_statusbar_header_summary">Imposta lo sfondo dell'intestazione pannello di notifica a un'immagine in base alla data e ora correnti</string>
+    <string name="custom_statusbar_header_summary">Imposta lo sfondo dell\'intestazione pannello di notifica a un\'immagine in base alla data e ora correnti</string>
 
     <!-- Fast Charge tile -->
     <string name="title_tile_fast_charge">Carica rapida</string>
@@ -528,7 +528,7 @@
 
     <!-- Switchable LockScreen Music Controller -->
     <string name="lockscreen_music_controller_title">Controllo dei media</string>
-    <string name="lockscreen_music_controller_summary">Mostra controllo dei media e la copertina dell'album durante la riproduzione di musica</string>
+    <string name="lockscreen_music_controller_summary">Mostra controllo dei media e la copertina dell\'album durante la riproduzione di musica</string>
 
     <!-- Toast Animation -->
     <string name="toast_animation_title">Animazioni toast</string>
