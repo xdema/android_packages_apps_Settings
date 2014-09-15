@@ -8,7 +8,7 @@
     <!-- General strings -->
     <string name="attention">Attenzione</string>
     <string name="default_string">Default</string>
-    <string name="recent_panel_settings_title" >Impostazioni Recent panel</string>
+    <string name="recent_panel_settings_title" >Impostazioni pannello recenti</string>
     <string name="reset">Reset</string>
     <string name="ok">OK</string>
     <string name="enabled">Attivato</string>
@@ -221,7 +221,7 @@
     <!-- NavBar long press actions -->
     <string name="navbar_long_press_title">Azioni premere a lungo</string>
     <string name="recent_long_press_title">Recenti "azioni premere a lungo"</string>
-    <string name="recent_long_press_none">Niente</string>
+    <string name="recent_long_press_none">Nessuno</string>
     <string name="recent_long_press_last_app">Ultima app</string>
     <string name="recent_long_press_screenshot">Cattura schermo</string>
     <string name="recent_long_press_kill_app">Kill app</string>
@@ -285,7 +285,7 @@
     <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Pannello Quick Settings</string>
     <string name="shortcut_action_smart">Pulldown intelligente</string>
-    <string name="shortcut_action_none">Niente</string>
+    <string name="shortcut_action_none">Nessuno</string>
     <string name="shortcut_action_power_menu">Menu Power</string>
     <string name="shortcut_action_torch">Torcia</string>
     <string name="shortcut_action_ring_vib">Squilla/Vibra</string>
@@ -386,5 +386,167 @@
     <string name="shortcuts_color_title">Colore icona</string>
     <string name="shortcuts_color_mode_title">Modalità colore icona</string>
     <string name="shortcuts_color_mode_summary">Cambia la modalità colore delle icone dei collegamenti</string>
+
+    <!-- Power menu nav bar -->
+    <string name="power_menu_navbar_title">Barra navigazione</string>
+    <string name="navigation_bar_warning_no_navigation_present">Nessun altro metodo di navigazione è attualmente abilitato. Disattivare la barra di navigazione può risultare in un dispositivo inutilizzabile. Vuoi attivare controlli PIE?</string>
+    <string name="pie_warning_no_navigation_present">Nessun altro metodo di navigazione è attualmente abilitato. La disattivazione dei controlli PIE può risultare in un dispositivo inutilizzabile. Vuoi abilitare barra di navigazione?</string>
+    <string name="pie_trigger_warning">Uno dei principali fattori scatenanti (in basso, a sinistra oa destra) deve essere abilitata.</string>
+
+    <!-- Lockscreen all widgets -->
+    <string name="lockscreen_allow_all_title">Permetti tutti i widget</string>
+    <string name="lockscreen_allow_all_summary">Permetti widgets non sviluppati per la lockscreen</string>
+    <string name="lockscreen_allow_all_warning">Alcuni widgets possono comportarsi in modo inaspettato quando posti nella lockscreen. Altri possono esporre i tuoi dati personali a chiunque acceda al dispositivo. Tienilo a mente prima di proseguire.</string>
+
+    <!--Blacklist peek and floating mode-->
+    <string name="blacklist_button_title">Blacklist</string>
+    <string name="peek_blacklist_label">Blacklist di Peek</string>
+    <string name="floating_blacklist_label">Blacklist di modalità finestra</string>
+    <string name="hover_blacklist_label">Blacklist di Hover</string>
+
+    <!-- Hover settings -->
+    <string name="hover_settings_title">Hover</string>
+    <string name="hover_require_fullscreen_mode_title">Richiede Desktop esteso</string>
+    <string name="hover_require_fullscreen_mode_summary">Mostra quando la barra di stato è nascosta</string>
+    <string name="hover_exclude_low_priority_title">Escludi bassa priorità</string>
+    <string name="hover_exclude_low_priority_summary">Escludi notifiche contrassegnati come priorità bassa</string>
+    <string name="hover_exclude_non_clearable_title">Escludi non azzerabile</string>
+    <string name="hover_exclude_non_clearable_summary">Escludi notifiche non eliminabili</string>
+
+    <!-- Hover long fade out delay -->
+    <string name="hover_long_fadeout_title">Tempo notifica di Hover</string>
+    <string name="hover_long_fadeout_3seconds">3 secondi</string>
+    <string name="hover_long_fadeout_5seconds">5 secondi (default)</string>
+    <string name="hover_long_fadeout_7seconds">7 secondi</string>
+    <string name="hover_long_fadeout_10seconds">10 secondi</string>
+    <string name="hover_long_fadeout_15seconds">15 secondi</string>
+
+    <!-- Hover instant fade out delay -->
+    <string name="hover_micro_fadeout_title">Hover tocca per nascondere</string>
+    <string name="hover_micro_fadeout_stock">Normale</string>
+    <string name="hover_micro_fadeout_instant">immediato</string>
+
+    <!-- Hover exclude topmost app -->
+    <string name="hover_exclude_topmost_title">Esclude app in primo piano</string>
+    <string name="hover_exclude_topmost_summary">Escludi notifiche app in esecuzione in primo piano</string>
+
+    <!-- Hover no notif in insecure lockscreen -->
+    <string name="hover_exclude_from_insecure_lock_screen_title">Escludi schermata di blocco insicuro</string>
+    <string name="hover_exclude_from_insecure_lock_screen_summary">Escludere le notifiche Hover dalla schermata di blocco insicuro</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_title">Heads up</string>
+    <string name="heads_up_settings_title">Notifiche avanzate heads up</string>
+    <string name="heads_up_expanded_title">Sempre espanse</string>
+    <string name="heads_up_expanded_summary">Mostra notifiche heads up sempre espanse</string>
+    <string name="heads_up_show_updates_title">Mostra aggiornamenti</string>
+    <string name="heads_up_show_updates_summary">Mostra come heads up anche gli aggiornamenti delle notifiche pendenti in background</string>
+    <string name="heads_up_gravity_title">Mostra in basso</string>
+    <string name="heads_up_gravity_summary">Mostra le notifiche heads up nella parte bassa dello schermo</string>
+    <string name="heads_up_snooze_title">Tempo di riposo (snooze)</string>
+    <string name="heads_up_snooze_summary">Se viene premuta l\'icona di snooze, disattiva le heads up per <xliff:g id="number">%d</xliff:g> minuti</string>
+    <string name="heads_up_snooze_disabled_summary">Il timer di snooze è disattivato</string>
+    <string name="heads_up_snooze_3min">3 minuti</string>
+    <string name="heads_up_snooze_5min">5 minuti</string>
+    <string name="heads_up_snooze_10min">10 minuti</string>
+    <string name="heads_up_snooze_15min">15 minuti</string>
+    <string name="heads_up_snooze_20min">20 minuti</string>
+    <string name="heads_up_time_out_title">Time out</string>
+    <string name="heads_up_time_out_summary">Le notifiche heads up saranno mostrate per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_never_summary">Le notifiche heads up saranno mostrate fino alla loro eliminazione</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_time_out_never">Mai</string>
+    <string name="heads_up_switch_label">Attiva le notifiche heads up</string>
+
+    <!-- Heads-up floating window -->
+    <string name="heads_up_floating_window">Lancia in modalità finestra</string>
+
+    <!-- Network Stats -->
+    <string name="status_bar_network_cat">Metro traffico di rete</string>
+    <string name="status_bar_network_header">Metro traffico di rete</string>
+    <string name="status_bar_network_title">Traffico di rete</string>
+    <string name="status_bar_show_network_stats_title">Mostra la velocità di rete</string>
+    <string name="status_bar_network_stats_update_title">Frequenza di aggiornamento</string>
+    <string name="hide_network_speed">Nascondi quando non c'è traffico</string>
+    <string name="hide_network_speed_summary">Nascondi indicatore quando non c'è traffico di rete</string>
+
+    <!-- Custom notification panel header -->
+    <string name="custom_statusbar_header_title">Intestazione del pannello di notifica contestuale</string>
+    <string name="custom_statusbar_header_summary">Imposta lo sfondo dell'intestazione pannello di notifica a un'immagine in base alla data e ora correnti</string>
+
+    <!-- Fast Charge tile -->
+    <string name="title_tile_fast_charge">Carica rapida</string>
+
+    <!-- QuickSettings fliptiles -->
+    <string name="flip_qs_tiles_title">Animazione dei tiles</string>
+    <string name="flip_qs_tiles_summary">Abilita animazione al tocco</string>
+
+    <!-- Notification Panel Blur Background -->
+    <string name="category_notification_panel_blur_title">Sfondo pannello</string>
+    <string name="title_qs_blur_background">Sfocatura di sfondo</string>
+    <string name="title_qs_blur_background_fade">Effetto di dissolvenza</string>
+    <string name="title_qs_blur_background_colorfilter">Filtro colore</string>
+    <string name="qs_blur_background_colorfilter">Imposta la sfocatura di sfondo con filtro colore</string>
+    <string name="qs_blur_background_fade">Utilizzare effetto di dissolvenza durante lo scorrimento del pannello</string>
+    <string name="qs_blur_background">Tempo reale di sfondo superficie con effetto di sfocatura</string>
+
+    <!-- Heads-up disable on lockscreen -->
+    <string name="heads_up_exclude_from_lock_screen">Disabilitare in blocco schermo</string>
+
+    <!-- SmoothProgressBar -->
+    <string name="progressbar_title">Personalizzare ProgressBar</string>
+    <string name="progressbar_mirror_title">modalità specchio</string>
+    <string name="progressbar_reverse_title">Invertito</string>
+    <string name="progressbar_speed_title">Velocità</string>
+    <string name="progressbar_width_title">Corsa larghezza</string>
+    <string name="progressbar_length_title">Separatore lunghezza</string>
+    <string name="progressbar_count_title">Sezioni conti</string>
+    <string name="progressbar_color_1_title">Colore1</string>
+    <string name="progressbar_color_2_title">Colore2</string>
+    <string name="progressbar_color_3_title">Colore3</string>
+    <string name="progressbar_color_4_title">Colore4</string>
+    <string name="sample_progressbar_text">ProgressBar: Preview</string>
+    <string name="progressbar_interpolator">Interpolazione</string>
+    <string name="progressbar_none">Nessuno</string>
+    <string name="progressbar_acclerate">Accelerato</string>
+    <string name="progressbar_linear">Lineare</string>
+    <string name="progressbar_acceleratedecelerate">Accelerato/Decelerare</string>
+    <string name="progressbar_decelerate">Decelerare</string>
+    <string name="progressbar_reset_message">Riavvia stile progressbar a default?</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Lampeggio di notifiche</string>
+    <string name="sms_breath_title">Lampeggio SMS</string>
+    <string name="sms_breath_summary">Darà le notifiche sms un effetto di lampeggio nella barra di stato</string>
+    <string name="missed_call_breath_title">Lampeggio Chiamata persa</string>
+    <string name="missed_call_breath_summary">Darà le notifiche chiamate perse un effetto di lampeggio nella barra di stato</string>
+    <string name="voicemail_breath_title">Lampeggio Segretaria telefonica</string>
+    <string name="voicemail_breath_summary">Darà le notifiche segretaria telefonica un effetto di lampeggio nella barra di stato</string>
+
+    <!-- Switchable LockScreen Music Controller -->
+    <string name="lockscreen_music_controller_title">Controllo dei media</string>
+    <string name="lockscreen_music_controller_summary">Mostra controllo dei media e la copertina dell'album durante la riproduzione di musica</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Animazioni toast</string>
+    <string name="toast_none_animation">Nessuno</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade Animazione</string>
+    <string name="toast_SlideRight_animation">SlideRight Animazione</string>
+    <string name="toast_SlideLeft_animation">SlideLeft Animazione</string>
+    <string name="toast_Xylon_animation">Xylon Animazione</string>
+    <string name="toast_Toko_animation">Toko Animazione</string>
+    <string name="toast_Tn_animation">Tn Animazione</string>
+    <string name="toast_Honami_animation">Honami Animazione</string>
+    <string name="toast_FastFade_animation">FastFade Animazione</string>
+    <string name="toast_GrowFade_animation">GrowFade Animazione</string>
+    <string name="toast_GrowFadeCenter_animation">GrowFadeCenter Animazione</string>
+    <string name="toast_GrowFadeBottom_animation">GrowFadeBottom Animazione</string>
+    <string name="toast_Translucent_animation">Translucent Animazione</string>
+    <string name="toast_SlideLeftRight_animation">Far scorrere da sinistra a destra Animazione</string>
+    <string name="toast_SlideRightLeft_animation">Far scorrere da destra a sinistra Animazione</string>
 
 </resources>
