@@ -959,7 +959,6 @@
     <string name="overscroll_glow_title">Over scroll Color</string>
     <string name="edge_effect_title">Edge Glow effect</string>
     <string name="bounce_effect_title">Bounce effect</string>
-    <string name="none_effect_title">None</string>
     <string name="extra_heavy_title">Extra Heavy</string>
     <string name="heavy_title">Heavy</string>
     <string name="medium_title">Medium</string>
