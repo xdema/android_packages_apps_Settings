@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- LCD Density -->
+    <!-- maximum value for the custom display density -->
+    <integer name="display_density_max">480</integer>
+    <!-- minimum value for the custom display density -->
+    <integer name="display_density_min">240</integer>
+
+</resources>
