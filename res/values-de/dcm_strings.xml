@@ -4,7 +4,6 @@
 
     <!-- About phone screen, DarkCM version -->
     <string name="dcm_version_title">DarkCyanogenMod version</string>
-    <string name="dcm_version_default">4.00</string>
 
     <!-- General strings -->
     <string name="attention">Achtung</string>
