@@ -34,10 +34,8 @@ import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
-import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
@@ -70,11 +68,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
 
-    private static final String PROP_DISPLAY_DENSITY = "persist.sf.lcd_density";
-
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
-    private static final String KEY_DISPLAY_DENSITY = "display_density";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
@@ -108,7 +103,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     //private CheckBoxPreference mExpandedDesktopNoNavbarPref;
 
     private CheckBoxPreference mAccelerometer;
-    private EditTextPreference mDisplayDensity;
     private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
     private CheckBoxPreference mScreenOffAnimation;
@@ -330,10 +324,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(lightPrefs);
         }
-
-        mDisplayDensity = (EditTextPreference) findPreference(KEY_DISPLAY_DENSITY);
-        mDisplayDensity.setText(SystemProperties.get(PROP_DISPLAY_DENSITY, "0"));
-        mDisplayDensity.setOnPreferenceChangeListener(this);
     }
 
     private void updateDisplayRotationPreferenceDescription() {
@@ -677,32 +667,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
             return true;
-        } else if (KEY_DISPLAY_DENSITY.equals(key)) {
-            final int max = getResources().getInteger(R.integer.display_density_max);
-            final int min = getResources().getInteger(R.integer.display_density_min);
-
-            int value = SystemProperties.getInt(PROP_DISPLAY_DENSITY, 0);
-            try {
-                value = Integer.parseInt((String) objValue);
-            } catch (NumberFormatException e) {
-                Log.e(TAG, "Invalid input", e);
-            }
-
-            // 0 disables the custom density, so do not check for the value, else…
-            if (value != 0) {
-                // …cap the value
-                if (value < min) {
-                    value = min;
-                } else if (value > max) {
-                    value = max;
-                }
-            }
-
-            SystemProperties.set(PROP_DISPLAY_DENSITY, String.valueOf(value));
-            mDisplayDensity.setText(String.valueOf(value));
-
-            // we handle it, return false
-            return false;
         }
         return true;
     }
