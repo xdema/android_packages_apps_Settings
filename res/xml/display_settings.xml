@@ -39,6 +39,13 @@
                     android:entries="@array/screen_timeout_entries"
                     android:entryValues="@array/screen_timeout_values" />
 
+            <EditTextPreference
+                    android:key="display_density"
+                    android:title="@string/display_density"
+                    android:summary="@string/display_density_summary"
+                    android:persistent="false"
+                    android:inputType="numberSigned" />
+
             <com.android.settings.FontDialogPreference
                     android:key="font_size"
                     android:title="@string/title_font_size"
@@ -193,14 +200,6 @@
                 android:fragment="com.android.settings.crdroid.RecentPanelSettings"
                 android:title="@string/recent_panel_settings_title" />
 
-            <!-- LCD Density -->
-            <!--<EditTextPreference
-                    android:key="display_density"
-                    android:title="@string/display_density"
-                    android:summary="@string/display_density_summary"
-                    android:persistent="false"
-                    android:inputType="numberSigned" />-->
-
             <!-- App sidebar -->
             <PreferenceScreen
                 android:key="app_sidebar"
@@ -241,7 +240,6 @@
                 android:summary="@string/overscroll_weight_summary"
                 android:fragment="com.android.settings.crdroid.OverscrollEffects" />
 
-            <!-- ScreenReocrder -->
             <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
