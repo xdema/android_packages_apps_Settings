@@ -149,14 +149,6 @@
         android:icon="@drawable/ic_settings_trds"
         android:title="@string/theme_settings_title" />
 
-    <!-- Blur Manager -->
-    <header
-        settings:includeXmlForSearch="@xml/blur_manager"
-        android:id="@+id/blur_manager_settings"
-        android:icon="@drawable/ic_blur"
-        android:fragment="com.android.settings.cyanogenmod.BlurManagerSettings"
-        android:title="@string/blur_manager_title" />
-
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
