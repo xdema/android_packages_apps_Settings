@@ -87,6 +87,7 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.cyanogenmod.ButtonSettings;
+import com.android.settings.cyanogenmod.BlurManagerSettings;
 import com.android.settings.cyanogenmod.LockscreenInterface;
 import com.android.settings.cyanogenmod.NavBar;
 import com.android.settings.cyanogenmod.NavRing;
@@ -210,7 +211,8 @@ public class Settings extends PreferenceActivity
             R.id.notification_bar_settings,
             R.id.lock_screen_settings,
             R.id.privacy_settings_cyanogenmod,
-            R.id.button_settings
+            R.id.button_settings,
+            R.id.blur_manager_settings
     };
 
     private SharedPreferences mDevelopmentPreferences;
@@ -472,6 +474,7 @@ public class Settings extends PreferenceActivity
         LockscreenInterface.class.getName(),
         StatusBar.class.getName(),
         NotificationDrawer.class.getName(),
+        BlurManagerSettings.class.getName(),
         ButtonSettings.class.getName(),
         ProfilesSettings.class.getName(),
         PerformanceSettings.class.getName(),
