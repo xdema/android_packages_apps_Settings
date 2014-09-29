@@ -17,7 +17,6 @@
 package com.android.settings.cyanogenmod;
 
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
@@ -31,8 +30,6 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.util.crdroid.DeviceUtils;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
 public class NotificationDrawer extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "NotificationDrawer";
@@ -40,12 +37,10 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
     private static final String UI_COLLAPSE_BEHAVIOUR = "notification_drawer_collapse_on_dismiss";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
     private static final String PRE_SMART_PULLDOWN = "smart_pulldown";
-    private static final String BLUR_BACKGROUND_COLORFILTER = "notificationpanel_blurbackground_color";
     
     private ListPreference mCollapseOnDismiss;
     private CheckBoxPreference mStatusBarCustomHeader;
     private ListPreference mSmartPulldown;
-    private ColorPickerPreference mColorPickerPreference;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,15 +57,6 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
         mCollapseOnDismiss.setValue(String.valueOf(collapseBehaviour));
         mCollapseOnDismiss.setOnPreferenceChangeListener(this);
         updateCollapseBehaviourSummary(collapseBehaviour);
-
-        // BlurBackGround
-        int currentcolor = Settings.System.getInt(getContentResolver(),
-                Settings.System.NOTIFICATIONPANEL_BLURBACKGROUND_COLORFILTER,
-                Color.GRAY);
-        mColorPickerPreference = (ColorPickerPreference) findPreference(BLUR_BACKGROUND_COLORFILTER);
-        mColorPickerPreference.setOnPreferenceChangeListener(this);
-        mColorPickerPreference.setDefaultValue(currentcolor);
-        mColorPickerPreference.setNewPreviewColor(currentcolor);
 
         // Time-context headers
         mStatusBarCustomHeader = (CheckBoxPreference) findPreference(STATUS_BAR_CUSTOM_HEADER);
@@ -97,13 +83,6 @@ public class NotificationDrawer extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_COLLAPSE_ON_DISMISS, value);
             updateCollapseBehaviourSummary(value);
-            return true;
-        } else if (preference == mColorPickerPreference) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(objValue)));
-            int color = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.NOTIFICATIONPANEL_BLURBACKGROUND_COLORFILTER, color);
             return true;
         } else if (preference == mSmartPulldown) {
             int smartPulldown = Integer.valueOf((String) objValue);
