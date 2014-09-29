@@ -63,23 +63,6 @@
         android:defaultValue="false" />
 
     <PreferenceCategory
-        android:title="@string/category_notification_panel_blur_title" >
-
-        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
-            android:key="notificationpanel_blurbackground"
-            android:title="@string/title_qs_blur_background"
-            android:summary="@string/qs_blur_background"
-            android:defaultValue="false" />
-
-        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
-            android:key="notificationpanel_blurbackground_fade"
-            android:title="@string/title_qs_blur_background_fade"
-            android:summary="@string/qs_blur_background_fade"
-            android:dependency="notificationpanel_blurbackground"
-            android:defaultValue="false" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:title="@string/category_quick_access" >
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
@@ -114,4 +97,5 @@
             <extra android:name="config_ribbon" android:value="true" />
         </PreferenceScreen>
     </PreferenceCategory>
+
 </PreferenceScreen>
