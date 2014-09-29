@@ -8,6 +8,7 @@
 
     <!-- General strings -->
     <string name="attention">Attention</string>
+    <string name="misc_title">Misc</string>
     <string name="default_string">Default</string>
     <string name="recent_panel_settings_title">Recent panel settings</string>
     <string name="reset">Reset</string>
@@ -1088,5 +1089,8 @@
     <!-- Blur Manager -->
     <string name="blur_manager_title">Blur manager</string>
     <string name="recents_panel_blur">Recents panel (AOSP)</string>
+
+    <!-- Force fast charge -->
+    <string name="pref_force_fast_charge_title">Force fast charge</string>
 
 </resources>
