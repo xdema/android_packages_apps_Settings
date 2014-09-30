@@ -1086,7 +1086,11 @@
     <string name="lockscreen_enable_power_menu_title">Enable power menu</string>
     <string name="lockscreen_enable_power_menu_summary">Show power menu when screen is locked</string>
 
-    <!-- Force fast charge -->
+    <!-- Performance -->
+    <string name="pref_mcps_title">Multicore power saving</string>
     <string name="pref_force_fast_charge_title">Force fast charge</string>
+    <string name="mcps_0">Off</string>
+    <string name="mcps_1">On</string>
+    <string name="mcps_2">Aggressive</string>
 
 </resources>
