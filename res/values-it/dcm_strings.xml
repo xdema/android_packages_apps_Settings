@@ -610,7 +610,7 @@
     <string name="select_sound_pack_title">Seleziona pacchetto audio</string>
     <string name="select_sound_pack_summary">Selezionare il pacchetto audio attivo</string>
     <string name="default_sound_pack">Default (Sistema)</string>
-    <string name="error_pack_install">Errore durante l'installazione del pacchetto di audio</string>
+    <string name="error_pack_install">Errore durante l\'installazione del pacchetto di audio</string>
 
     <!-- Volume panel background color && transparency -->
     <string name="volume_panel_bg_color_title">Pannello Volume colore BG</string>
