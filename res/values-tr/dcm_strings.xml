@@ -3,13 +3,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, DarkCM version -->
-    <string name="cp_version_title">DarkCyanogenMod version</string>
+    <string name="dcm_version_title">DarkCyanogenMod sürümü</string>
 
     <!-- General strings -->
     <string name="attention">Dikkat</string>
     <string name="default_string">Varsayılan</string>
     <string name="recent_panel_settings_title" >Son uygulama paneli</string>
     <string name="reset">Sıfırla</string>
+    <string name="reset_colors">Tüm renkleri sıfırla?</string>
+    <string name="reset_default_message">Varsayılana sıfırla</string>
     <string name="ok">Tamam</string>
     <string name="enabled">Etkin</string>
     <string name="disabled">Devredışı</string>
@@ -797,6 +799,7 @@
     <!-- Heads up -->
     <string name="heads_up_title">Bildirim pencereleri</string>
     <string name="heads_up_settings_title">Bildirim pencereleri</string>
+    <string name="heads_up_master_switch">Heads up anahtarı</string>
     <string name="heads_up_expanded_title">Daima genişletilmiş</string>
     <string name="heads_up_expanded_summary">Bildirim pencerelerini daima genişletilmiş göster</string>
     <string name="heads_up_show_updates_title">Güncellemeleri göster</string>
@@ -820,6 +823,8 @@
     <string name="heads_up_time_out_10sec">10 saniye</string>
     <string name="heads_up_time_out_never">Asla</string>
     <string name="heads_up_switch_label">Bildirim pencerelerini etkinleştir</string>
+    <string name="heads_up_note_title">ÖNEMLİ</string>
+    <string name="heads_up_note_summary">İşaretlediğinizde bildirim pencereleri etkinleştirilir fakat bildirimlerin Heads up modunda gösterilmesini istediğiniz uygulamayı Ayarlar -> Uygulamalardan seçmeniz gerekir. NOT: Heads up devredışı bırakıldığında arama arayüzü ve mesajlar etkinleştirilene kadar heads up modunda bildirim almayı durdururlar</string>
 
     <!-- Heads-up floating window -->
     <string name="heads_up_floating_window">Açılan pencere görünümü</string>
@@ -843,15 +848,6 @@
     <!-- QuickSettings fliptiles -->
     <string name="flip_qs_tiles_title">Kareleri çevir</string>
     <string name="flip_qs_tiles_summary">Dokunulduğunda kareleri çevir</string>
-
-    <!-- Notification Panel Blur Background -->
-    <string name="category_notification_panel_blur_title">Panel arkaplanı</string>
-    <string name="title_qs_blur_background">Bulanık arkaplan</string>
-    <string name="title_qs_blur_background_fade">Solma efekti</string>
-    <string name="title_qs_blur_background_colorfilter">Renk filtresi</string>
-    <string name="qs_blur_background_colorfilter">Arkaplan bulanıklığını renk filtresi ile ayarla</string>
-    <string name="qs_blur_background_fade">Paneli kaydırırken solma efektini kullan</string>
-    <string name="qs_blur_background">Bulanıklık efekti ile gerçek zamanlı yüzey arkaplanı</string>
 
     <!-- Heads-up disable on lockscreen -->
     <string name="heads_up_exclude_from_lock_screen">Kilit ekranında devredışı</string>
@@ -1088,6 +1084,6 @@
 
     <!-- Enable power menu -->
     <string name="lockscreen_enable_power_menu_title">Güç menüsü etkin</string>
-    <string name="lockscreen_enable_power_menu_summary">Ekran kilitlenince güç menüsünü göster</string>	
-	
+    <string name="lockscreen_enable_power_menu_summary">Ekran kilitlenince güç menüsünü göster</string>
+
 </resources>
