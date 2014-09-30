@@ -484,15 +484,6 @@
     <string name="flip_qs_tiles_title">Animazione dei tiles</string>
     <string name="flip_qs_tiles_summary">Abilita animazione al tocco</string>
 
-    <!-- Notification Panel Blur Background -->
-    <string name="category_notification_panel_blur_title">Sfondo pannello</string>
-    <string name="title_qs_blur_background">Sfocatura di sfondo</string>
-    <string name="title_qs_blur_background_fade">Effetto di dissolvenza</string>
-    <string name="title_qs_blur_background_colorfilter">Filtro colore</string>
-    <string name="qs_blur_background_colorfilter">Imposta la sfocatura di sfondo con filtro colore</string>
-    <string name="qs_blur_background_fade">Utilizzare effetto di dissolvenza durante lo scorrimento del pannello</string>
-    <string name="qs_blur_background">Tempo reale di sfondo superficie con effetto di sfocatura</string>
-
     <!-- Heads-up disable on lockscreen -->
     <string name="heads_up_exclude_from_lock_screen">Disabilitare in blocco schermo</string>
 
@@ -548,5 +539,132 @@
     <string name="toast_Translucent_animation">Translucent Animazione</string>
     <string name="toast_SlideLeftRight_animation">Far scorrere da sinistra a destra Animazione</string>
     <string name="toast_SlideRightLeft_animation">Far scorrere da destra a sinistra Animazione</string>
+
+    <!-- ListView animation -->
+    <string name="listview_category">Animazione listView</string>
+    <string name="listview_animation_title">Animazione listView</string>
+    <string name="listview_off">Disattivato</string>
+    <string name="listview_wave_left">Wave (Sinistra)</string>
+    <string name="listview_wave_right">Wave (Destra)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (Dal alto)</string>
+    <string name="listview_stack_bottom">Stack (Dal basso)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (Sinistra)</string>
+    <string name="listview_translate_right">Translate (Destra)</string>
+
+    <!-- ListView interpolator (Non ha bisogno traduzione) -->
+
+    <!-- Slim System app remover  -->
+    <string name="listsystem">Lista</string>
+    <string name="sizer_title">Elimina App Sistema</string>
+    <string name="caution">Attenzione!</string>
+    <string name="sizer_message_startup">Questo strumento consente di eliminare le applicazioni di sistema. Usare con cautela e solo eliminare le applicazioni che conosci possono essere rimossi.</string>
+    <string name="cancel">Cancella</string>
+    <string name="sizer_message_delete">Sei sicuro di eliminare questa app?</string>
+    <string name="btn_delete">Eliminare le apps selezionate!</string>
+    <string name="delete_progress_title">ELiminando</string>
+    <string name="delete_progress">I file selezionati vengono eliminati...</string>
+    <string name="delete_success">Eliminato</string>
+    <string name="delete_fail">Impossibile eliminare</string>
+    <string name="btn_profile">Profilo</string>
+    <string name="sizer_message_sdnowrite">Impossibile scrivere su scheda SD.</string>
+    <string name="sizer_message_sdnoread">Impossibile leggere scheda SD.</string>
+    <string name="sizer_message_filesuccess">Profilo creato.</string>
+    <string name="sizer_message_filefail">Impossibile creare il profilo.</string>
+    <string name="sizer_message_noselect">Niente selezionato.</string>
+
+    <!-- Overscroll effects -->
+    <string name="ui_overscroll_title">Effetti Scorrimento</string>
+    <string name="overscroll_glow_title">Colore scorrimento</string>
+    <string name="edge_effect_title">Effetto edge glow</string>
+    <string name="bounce_effect_title">Effetto bounce</string>
+    <string name="extra_heavy_title">Super pesante</string>
+    <string name="heavy_title">Pesante</string>
+    <string name="medium_title">Medio</string>
+    <string name="light_title">Leggero</string>
+    <string name="extra_light_title">Super leggero</string>
+    <string name="overscroll_title">Effetto scorrimento</string>
+    <string name="overscroll_summary">Scelgi l\'effetto di scorrimento</string>
+    <string name="overscroll_weight_title">Peso scorrimento</string>
+    <string name="overscroll_weight_summary">Selezionare il peso di scorrimento</string>
+
+    <!-- App moving -->
+    <string name="app_moving_enable">Attiva spostamento app</string>
+    <string name="app_moving_disable">Disattiva spostamento app</string>
+    <string name="app_moving_reboot_title">Riavvia ora?</string>
+    <string name="app_moving_reboot_enabled_desc">Spostamento delle apps attivato.\n\nIl dispositivo deve essere riavviato perche l\'impostazione abbia effetto.</string>
+    <string name="app_moving_reboot_disabled_desc">Spostamento delle apps Disattivato.\n\nIl dispositivo deve eseere riavviato perche l\'impostazione abbia effetto.</string>
+    <string name="app_moving_reboot_now_button">Riavvia ora</string>
+    <string name="app_moving_reboot_later_button">Riavvia dopo</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Carica intorno all\'anello di sblocco </string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Pacchetto audio</string>
+    <string name="install_sound_pack_title">Installa pacchetti audio</string>
+    <string name="install_sound_pack_summary">Installare i nuovi pacchetti audio aggiunti nella cartella Soundpacks sulla memoria interna</string>
+    <string name="select_sound_pack_title">Seleziona pacchetto audio</string>
+    <string name="select_sound_pack_summary">Selezionare il pacchetto audio attivo</string>
+    <string name="default_sound_pack">Default (Sistema)</string>
+    <string name="error_pack_install">Errore durante l'installazione del pacchetto di audio</string>
+
+    <!-- Volume panel background color && transparency -->
+    <string name="volume_panel_bg_color_title">Pannello Volume colore BG</string>
+    <string name="trds_default_color">Predefinito</string>
+    <string name="reset_default_message">Ripristina predefinito</string>
+    <string name="qs_style_reset_message">Ripristina tutti i colori predefiniti?</string>
+
+    <!-- Quicksettings panel floating window -->
+    <string name="title_floating_window">Modalità finestra</string>
+    <string name="summary_floating_window">Apre Quick Settings tiles in modalità finestra</string>
+
+    <!-- Driving mode -->
+    <string name="voice_tts_title">Modalità guida</string>
+    <string name="tts_settings_reset_message">Ripristina tutte le impostazioni predefinite?</string>
+    <string name="voice_tts_notification_title">Modalità guida</string>
+    <string name="voice_tts_notification_summary_on">Attiva modalità guida</string>
+    <string name="voice_tts_notification_summary_off">Disattiva modalità guida</string>
+    <string name="voice_tts_volume_title">Volume</string>
+    <string name="voice_tts_volume_summary">Impostare il volume per voce</string>
+    <string name="voice_tts_call_title">Chiamata in arrivo</string>
+    <string name="voice_tts_call_summary">Attiva/Disattiva voce per chiamate in arrivo</string>
+    <string name="voice_tts_sms_title">Nuovo messaggio</string>
+    <string name="voice_tts_sms_summary">Attiva/Disattiva voce per nuovi messaggi</string>
+    <string name="voice_tts_sms_read_title">Leggere nuovo messaggio</string>
+    <string name="voice_tts_sms_read_summary">Attiva/Disattiva voce per leggere nuovi messaggi</string>
+    <string name="voice_tts_charge_full_title">Indicatore batteria carica</string>
+    <string name="voice_tts_charge_full_summary">Attiva/Disattiva voce per batteria carica</string>
+    <string name="voice_tts_charge_on_title">Collega caricabatteria</string>
+    <string name="voice_tts_charge_on_summary">Attiva/Disattiva voce per caricabatteria collegato</string>
+    <string name="voice_tts_charge_off_title">Scollegare caricabatteria</string>
+    <string name="voice_tts_charge_off_summary">Attiva/Disattiva voce per caricabatteria scollegato</string>
+    <string name="voice_tts_clock_title">Orologio</string>
+    <string name="voice_tts_clock_summary">Attiva/Disattiva voce per orologio dopo accensione schermo</string>
+    <string name="voice_tts_date_title">Data</string>
+    <string name="voice_tts_date_summary">Attiva/Disattiva voce per data dopo accensione schermo</string>
+    <string name="voice_tts_notif_title">Notificazioni</string>
+    <string name="voice_tts_notif_summary">Attiva/Disattiva voce per nuove notifiche</string>
+    <string name="voice_tts_notif_read_title">Leggere nuove notifiche</string>
+    <string name="voice_tts_notif_read_summary">Attiva/Disattiva voce per leggere i nuovi messaggi di notifiche</string>
+    <string name="voice_tts_whitelist_title">App incluse</string>
+    <string name="voice_tts_whitelist_summary">Quali apps dai il permesso voce per nuove notifiche</string>
+    <string name="voice_tts_music_title">Brano musicale</string>
+    <string name="voice_tts_music_summary">Attiva/Disattiva voce per nome brano</string>
+    <string name="voice_tts_annoy_notif_title">Voce notifiche Meno frequenti</string>
+    <string name="voice_tts_annoy_notif_summary">Limita voce di notifiche per ogni app per un periodo di tempo</string>
+    <string name="voice_tts_annoy_notif_default">Cmportamento predefinito</string>
+    <string name="voice_tts_annoy_notif_3s">3 secondi</string>
+    <string name="voice_tts_annoy_notif_5s">5 secondi</string>
+    <string name="voice_tts_annoy_notif_10s">10 secondi</string>
+    <string name="voice_tts_annoy_notif_15s">15 secondi</string>
+    <string name="voice_tts_annoy_notif_30s">30 secondi</string>
+    <string name="voice_tts_annoy_notif_45s">45 secondi</string>
+    <string name="voice_tts_annoy_notif_1m">1 minuto</string>
+    <string name="voice_tts_annoy_notif_2m">2 minuti</string>
+    <string name="voice_tts_annoy_notif_5m">5 minuti</string>
 
 </resources>
