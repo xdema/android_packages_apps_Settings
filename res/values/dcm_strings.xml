@@ -1093,4 +1093,7 @@
     <string name="mcps_1">On</string>
     <string name="mcps_2">Aggressive</string>
 
+    <!-- Art Runtime -->
+    <string name="custom_runtime_warning_message_dcm">ART is not officially supported by DarkCyanogenMod ROM as it is highly experimental and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+
 </resources>
