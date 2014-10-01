@@ -271,6 +271,25 @@
     <string name="show_enter_key_title">Mostra pulsante Invio</string>
     <string name="show_enter_key_summary">Forza la tastiera a mostrare il pulsante Invio anzichè quello per le emoticons</string>
 
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Gestione connessioni</string>
+    <string name="telo_radio_options_category">Configurazione schermo accesso</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Selezionare questa opzione se si utilizza LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G in Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Quando Wi -Fi è collegato la modalità rete viene commutata a 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Configurazione schermo spento</string>
+    <string name="telo_radio_2g_screenoff_title">2G con schermo spento</string>
+    <string name="telo_radio_2g_screenoff_summary">Il dispositivo passa a 2G quando lo schermo è spento.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Tempo per passare a 2G</string>
+    <string name="telo_radio_2g_3min">3 minuti</string>
+    <string name="telo_radio_2g_5min">5 minuti</string>
+    <string name="telo_radio_2g_10min">10 minuti</string>
+    <string name="telo_radio_2g_15min">15 minuti</string>
+    <string name="telo_radio_2g_20min">20 minuti</string>
+    <string name="telo_radio_go_3g_unlock_title">Sblocco 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Quando il dispositivo è sbloccato la rete passa a modalità 3G.</string>
+
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Cambiare stili recenti</string>
     <string name="custom_recent_summary">Spuntare su Slim recenti o deselezionare per stock recenti. SPUNTARE O DESELEZIONARE QUESTO FARÀ RIAVVIARE IL TUO SYSTEMUI</string>
