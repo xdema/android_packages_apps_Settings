@@ -14,7 +14,7 @@
     <string name="reset">Reset</string>
     <string name="reset_colors">Reset all colors to default?</string>
     <string name="reset_default_message">Reset default</string>
-    <string name="ok">OK</string>
+    <string name="ok">Ok</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="note">NOTE</string>
@@ -1042,11 +1042,11 @@
     <string name="voice_tts_annoy_notif_5m">5 minutes</string>
 
     <!-- require add space in the end of string -->
-    <string name="voice_tts_new_call">Incoming call from </string>
+    <string name="voice_tts_new_call">Incoming call from</string>
     <!-- require add space in the end of string -->
-    <string name="voice_tts_new_sms">New text message from </string>
+    <string name="voice_tts_new_sms">New text message from</string>
     <!-- require add space in the end of string -->
-    <string name="voice_tts_new_notif">New notification from </string>
+    <string name="voice_tts_new_notif">New notification from</string>
 
     <string name="voice_tts_charge_full">Battery fully charged</string>
     <string name="voice_tts_charge_on">Charging Start</string>

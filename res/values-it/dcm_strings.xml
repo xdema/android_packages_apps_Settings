@@ -9,8 +9,10 @@
     <string name="attention">Attenzione</string>
     <string name="default_string">Default</string>
     <string name="recent_panel_settings_title" >Impostazioni pannello recenti</string>
-    <string name="reset">Reset</string>
-    <string name="ok">OK</string>
+    <string name="reset">Riavvia</string>
+    <string name="ok">Ok</string>
+    <string name="reset_colors">Reimposta i colori predefiniti?</string>
+    <string name="reset_default_message">Reimposta predefiniti</string>
     <string name="enabled">Attivato</string>
     <string name="disabled">Disattivato</string>
     <string name="note">NOTA</string>
@@ -30,7 +32,53 @@
     <string name="title_tile_theme">Cambio tema</string>
 
     <!-- crDroid notifications -->
-    <string name="crdroid_notifications_title">Servizi Notifica</string>
+    <string name="crdroid_notifications_title">Servizi Notifiche</string>
+
+    <!-- Halo -->
+    <!-- Halo enable/disable -->
+    <string name="halo_active_title">Halo</string>
+    <string name="halo_active_summary">Seleziona per attivare o deselezionare per disattivare halo</string>
+
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Comportamento halo</string>
+    <string name="halo_hide_title">Nascondi halo dopo attività</string>
+    <string name="halo_hide_summary">Apparirà Halo per le attività in entrata e scorrerà fuori dalla vista dopo un po\'</string>
+    <string name="halo_state_title">Politica halo</string>
+    <string name="halo_state_summary">Attiva black/white lista di notifiche</string>
+    <string name="halo_state_black">Black lista</string>
+    <string name="halo_state_white">White lista</string>
+    <string name="halo_pause_title">Pausa app attiva</string>
+    <string name="halo_pause_summary">Quando si apre un app con Halo l'applicazione sottostante otterrà in pausa</string>
+    <string name="halo_notification_msgbox_title">Attiva messaggio pop-up</string>
+    <string name="halo_notification_msgbox_summary">Mostra casella messaggio per le notifiche in arrivo</string>
+    <string name="halo_unlock_ping_title">Ping su sblocco</string>
+    <string name="halo_unlock_ping_summary">Halo farà il ping quando il dispositivo è sbloccato se sono state ricevute nuove notifiche</string>
+
+    <string name="halo_size_title">Dimensioni halo</string>
+    <string name="halo_size_summary">Definisce quanto grande sta per essere halo</string>
+    <string name="halo_size_miniscule">Minuscolo</string>
+    <string name="halo_size_small">Piccolo</string>
+    <string name="halo_size_default">Normale (predefinito)</string>
+    <string name="halo_size_large">Lungo</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monster</string>
+
+    <string name="halo_notification_count_title">Conteggio notifiche</string>
+    <string name="halo_notification_count_summary">Visualizza contatore di notifiche su halo</string>
+    <string name="halo_notification_count_none">Nessuno</string>
+    <string name="halo_notification_count_total">Totale</string>
+    <string name="halo_notification_count_individual">Per app</string>
+    <string name="halo_notification_count_both">Entrambi</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Blacklist di halo</string>
+    <string name="app_halo_label_white">Whitelist di halo</string>
+
+    <!-- QS and navring Power menu -->
+    <string name="title_tile_power">Menu accensione</string> 
+    <string name="navring_action_power_menu">Menu accensione</string>       
+    <!-- QS and navring last app -->
+    <string name="navring_action_last_app">Ultima app</string>
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Attiva barra navigazione</string>
@@ -70,6 +118,17 @@
     <string name="lock_before_unlock_title">Mostra slider prima dello sblocco</string>
     <string name="lock_before_unlock_summary">Mostra lo slider della lockscreen prima del meccanismo di sblocco</string>
 
+    <!--  Recent clear all -->
+    <string name="recent_clear_all_button">Pulsante pulizia app recenti</string>
+    <string name="show_recent_clear_all_button_title">Mostra pulsante pulizia</string>
+    <string name="show_recent_clear_all_button_summary">Selezionare per mostrare o deselezionare per nascondere il pulsante di pulizia all\'interno della schermata delle applicazioni recenti</string>
+    <string name="recent_clear_all_button_location_title">Posizione pulsante pulizia</string>
+    <string name="recent_clear_all_button_location_summary">Scegliere in quale angolo viene visualizzato il pulsante pulizia all\'interno della schermata delle applicazioni recenti</string>
+    <string name="recent_clear_all_button_location_top_left">Alto a sinistra</string>
+    <string name="recent_clear_all_button_location_top_right">Alto a destra</string>
+    <string name="recent_clear_all_button_location_bottom_left">Basso a sinsitra</string>
+    <string name="recent_clear_all_button_location_bottom_right">Basso a destra</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Cattura colore</string>
     <string name="press_color_to_apply">Premere sul colore sottostante per applicare</string>
@@ -79,6 +138,27 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Imposta</string>
     <string name="color_default">Default</string>
+
+    <!-- Recent Ram Bar -->
+    <string name="ram_bar">Barra RAM recenti</string>
+    <string name="ram_bar_note_title">Nota</string>
+    <string name="ram_bar_note_summary">Questa barra mostra l\'utilizzo della memoria android (RAM). Si prega di notare che avere applicazioni nella cache aiuta il dispositivo ad aprire le app molto più veloce .</string>
+    <string name="ram_bar_mode_title">Modalità recenti barra RAM</string>
+    <string name="ram_bar_mode_dialog_title">Mostra sulla barra RAM</string>
+    <string name="ram_bar_none">Niente</string>
+    <string name="ram_bar_apps">Applicazioni</string>
+    <string name="ram_bar_cache">Applicazioni e cache</string>
+    <string name="ram_bar_other">Applicazioni, cache ed altri</string>
+    <string name="ram_bar_style_cat">Stile recenti barra RAM</string>
+    <string name="ram_bar_color_app_mem_color">Colore applicazioni RAM</string>
+    <string name="ram_bar_color_cache_mem_color">Colore cache RAM</string>
+    <string name="ram_bar_color_total_mem_color">Colore altri RAM</string>
+    <string name="ram_bar_color_enabled">Attivato</string>
+    <string name="ram_bar_color_disabled">Disattivato</string>
+    <string name="ram_bar_button_help">Aiuto</string>
+    <string name="ram_bar_button_reset">Reimposta colori</string>
+    <string name="ram_bar_reset">Reimposta</string>
+    <string name="ram_bar_reset_message">Reimposta i colori della barra RAM e panello recenti SLIM?</string>
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Stile sfondo</string>
@@ -465,8 +545,8 @@
     <string name="heads_up_floating_window">Lancia in modalità finestra</string>
 
     <!-- Network Stats -->
-    <string name="status_bar_network_cat">Metro traffico di rete</string>
-    <string name="status_bar_network_header">Metro traffico di rete</string>
+    <string name="status_bar_network_cat">Traffico di rete</string>
+    <string name="status_bar_network_header">Traffico di rete</string>
     <string name="status_bar_network_title">Traffico di rete</string>
     <string name="status_bar_show_network_stats_title">Mostra la velocità di rete</string>
     <string name="status_bar_network_stats_update_title">Frequenza di aggiornamento</string>
@@ -666,5 +746,57 @@
     <string name="voice_tts_annoy_notif_1m">1 minuto</string>
     <string name="voice_tts_annoy_notif_2m">2 minuti</string>
     <string name="voice_tts_annoy_notif_5m">5 minuti</string>
+
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_call">Chiamata in arrivo</string>
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_sms">Nuovo messaggio in arrivo</string>
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_notif">Nuova notifica</string>
+
+    <string name="voice_tts_charge_full">Batteria carica</string>
+    <string name="voice_tts_charge_on">Carica iniziata</string>
+    <string name="voice_tts_charge_off">Carica finita</string>
+    <string name="voice_tts_time">Tempo è</string>
+    <string name="voice_tts_date">Data è</string>
+    <string name="voice_tts_music">Riproducendo ora</string>
+    <string name="voice_tts_engine_started">Modalità guida pronta</string>
+    <string name="unknown_tts">Sconosciuto</string>
+    <string name="unknown_number_tts">Numero sconosciuto</string>
+    <string name="time_one">Uno</string>
+    <string name="time_two">Due</string>
+    <string name="time_three">Tre</string>
+    <string name="time_four">Quattro</string>
+    <string name="time_five">Cinque</string>
+    <string name="time_six">Sei</string>
+    <string name="time_seven">Sette</string>
+    <string name="time_eight">Otto</string>
+    <string name="time_nine">Nove</string>
+    <string name="time_ten">Dieci</string>
+    <string name="time_eleven">Undici</string>
+    <string name="time_twelve">Dodici</string>
+    <string name="time_oclock">o Clock</string>
+    <string name="time_five_past">Dopo cinque</string>
+    <string name="time_ten_past">Dopo dieci</string>
+    <string name="time_quarter_past">Dopo un quarto</string>
+    <string name="time_twenty_past">Venti</string>
+    <string name="time_twenty_five_past">Dopo venticinque</string>
+    <string name="time_half_past">Dopo mezzora</string>
+    <string name="time_twenty_five_to">Fino venticinque</string>
+    <string name="time_twenty_to">Fino venti</string>
+    <string name="time_quarter_to">Fino un quarto</string>
+    <string name="time_ten_to">Fino dieci</string>
+    <string name="time_five_to">Fino cinque</string>
+
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">Attiva menu accensione</string>
+    <string name="lockscreen_enable_power_menu_summary">Mostra menu accensione quando lo schermo è bloccato</string>
+
+    <!-- Performance -->
+    <string name="pref_mcps_title">Risparmio energetico dei core</string>
+    <string name="pref_force_fast_charge_title">Forza carica rapida</string>
+    <string name="mcps_0">Spento</string>
+    <string name="mcps_1">Accesso</string>
+    <string name="mcps_2">Aggressivo</string>
 
 </resources>
