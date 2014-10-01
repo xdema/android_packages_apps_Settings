@@ -48,7 +48,7 @@
     <string name="halo_state_black">Black lista</string>
     <string name="halo_state_white">White lista</string>
     <string name="halo_pause_title">Pausa app attiva</string>
-    <string name="halo_pause_summary">Quando si apre un app con Halo l'applicazione sottostante otterrà in pausa</string>
+    <string name="halo_pause_summary">Quando si apre un app con Halo l\'applicazione sottostante otterrà in pausa</string>
     <string name="halo_notification_msgbox_title">Attiva messaggio pop-up</string>
     <string name="halo_notification_msgbox_summary">Mostra casella messaggio per le notifiche in arrivo</string>
     <string name="halo_unlock_ping_title">Ping su sblocco</string>
@@ -550,8 +550,8 @@
     <string name="status_bar_network_title">Traffico di rete</string>
     <string name="status_bar_show_network_stats_title">Mostra la velocità di rete</string>
     <string name="status_bar_network_stats_update_title">Frequenza di aggiornamento</string>
-    <string name="hide_network_speed">Nascondi quando non c\'è traffico</string>
-    <string name="hide_network_speed_summary">Nascondi indicatore quando non c\'è traffico di rete</string>
+    <string name="hide_network_speed">Nascondi quando non c\'e traffico</string>
+    <string name="hide_network_speed_summary">Nascondi indicatore quando non c\'e traffico di rete</string>
 
     <!-- Custom notification panel header -->
     <string name="custom_statusbar_header_title">Intestazione del pannello di notifica contestuale</string>
