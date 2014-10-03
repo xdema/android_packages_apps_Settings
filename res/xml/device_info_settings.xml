@@ -157,11 +157,11 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
-        <!-- crDroid version -->
-        <Preference android:key="crdroid_version"
+        <!-- DCM version -->
+        <Preference android:key="dcm_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/crdroid_version_title"
-                android:summary="@string/crdroid_version_default"/>
+                android:title="@string/dcm_version_title"
+                android:summary="@string/dcm_version_default"/>
 
         <!-- Mod build date -->
         <Preference android:key="build_date"

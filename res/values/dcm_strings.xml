@@ -2,9 +2,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, crDroid version -->
-    <string name="crdroid_version_title">crDroid</string>
-    <string name="crdroid_version_default">Unknown</string>
+    <!-- About phone screen, DCM version -->
+    <string name="dcm_version_title">DarkCyanogenMod version</string>
+    <string name="dcm_version_default">6.00</string>
 
     <!-- General strings -->
     <string name="attention">Attention</string>
