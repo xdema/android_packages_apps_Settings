@@ -1035,10 +1035,4 @@
     <string name="overscroll_weight_title">Over scrolling weight</string>
     <string name="overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
-    <!-- Battery Bar -->
-    <string name="battery_bar_height">Battery bar height</string>
-    <string name="battery_bar_left_color">Battery bar left color</string>
-    <string name="battery_bar_right_color">Battery bar right color</string>
-    <string name="battery_bar_reset_message">Reset all entries to default?</string>
-
 </resources>
