@@ -414,6 +414,10 @@ public class Settings extends PreferenceActivity
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+        if (newConfig.uiThemeMode != mCurrentState && HeaderAdapter.mThemeEnabler != null) {
+            mCurrentState = newConfig.uiThemeMode;
+            HeaderAdapter.mThemeEnabler.setSwitchState();
+        }
         if (mSearchBar != null) {
             mSearchBar.clearFocus();
         }
@@ -1312,16 +1316,6 @@ public class Settings extends PreferenceActivity
         mAuthenticatorHelper.updateAuthDescriptions(this);
         mAuthenticatorHelper.onAccountsUpdated(this, accounts);
         invalidateHeaders();
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.uiThemeMode != mCurrentState && HeaderAdapter.mThemeEnabler != null) {
-            mCurrentState = newConfig.uiThemeMode;
-            HeaderAdapter.mThemeEnabler.setSwitchState();
-        }
     }
 
     public static void requestHomeNotice() {
