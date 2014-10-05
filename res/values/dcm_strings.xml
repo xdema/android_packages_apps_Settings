@@ -29,6 +29,7 @@
     <string name="theme_auto_mode_lightsensor">On light condition change</string>
     <string name="theme_auto_mode_twilight">On daytime</string>
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible</string>
+    <string name="trds_default_color">TRDS default</string>
 
     <!-- crDroid notifications -->
     <string name="crdroid_notifications_title">Notification services</string>
