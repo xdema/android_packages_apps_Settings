@@ -1105,4 +1105,8 @@
     <string name="toast_SlideLeftRight_animation">Slide Left To Right Animation</string>
     <string name="toast_SlideRightLeft_animation">Slide Right To Left Animation</string>
 
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">Enable power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Show power menu when screen is secure locked</string>
+
 </resources>
