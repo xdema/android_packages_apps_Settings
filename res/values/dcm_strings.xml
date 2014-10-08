@@ -138,7 +138,7 @@
     <string name="arrow_right" translatable="false">\u2192</string>
     <string name="arrow_down" translatable="false">\u2193</string>
     <string name="hex_hint" translatable="false">#FF000000</string>
-    <string name="ics_color" translatable="false">!!!</string>
+    <string name="ics_color" translatable="false">Reset</string>
     <string name="hex">Hex:</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
