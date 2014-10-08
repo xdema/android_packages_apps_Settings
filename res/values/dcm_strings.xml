@@ -184,11 +184,14 @@
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
    
     <!-- Status bar | Clock -->
+    <string name="status_bar_general_title">General</string>
     <string name="status_bar_clock">Clock and date</string>
     <string name="status_bar_clock_title">Clock and date style</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
     <string name="status_bar_show_clock_title">Show clock and date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
@@ -220,6 +223,9 @@
     <string name="clock_font_normal">Normal</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+    <string name="status_bar_style_title">Clock Customization</string>
+    <string name="clock_use_second">Use second clock</string>
+    <string name="clock_use_second_summary">Show second in clock</string>
 
     <!-- Volume pane timeout -->
     <string name="volume_panel_timeout_title">Volume panel Timeout</string>
