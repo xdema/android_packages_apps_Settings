@@ -204,6 +204,13 @@
                 android:entryValues="@array/listview_interpolator_values"
                 android:defaultValue="0" />
 
+            <!-- AOKP Animations -->
+            <PreferenceScreen
+                android:id="@+id/animations"  
+                android:title="@string/title_animation_controls"  
+                android:summary="@string/header_summary_animation"  
+                android:fragment="com.android.settings.crdroid.fragments.AnimationControls" />
+
             <!-- Toast animation -->
             <ListPreference
                 android:key="toast_animation"

@@ -56,6 +56,9 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
 
     private String mHelpUrl;
 
+    // Needed for AOKP Animations
+    protected ContentResolver mContentRes;
+
     //Needed for Lockscreen Notifications
     protected Context mContext;
 
@@ -77,6 +80,9 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
         super.onCreate(icicle);
 
         mContext = getActivity().getApplicationContext();
+
+        // Needed for AOKP Animations
+        mContentRes = getActivity().getContentResolver();
 
         // Prepare help url and enable menu if necessary
         int helpResource = getHelpResource();
@@ -419,4 +425,9 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
             return false;
         }
     }
+
+    // Needed for AOKP Animations
+    public void setTitle(int resId) {
+        getActivity().setTitle(resId);
+    }  
 }
