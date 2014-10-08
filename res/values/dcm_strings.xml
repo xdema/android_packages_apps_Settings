@@ -1145,4 +1145,10 @@
     <string name="battery_bar_animate_title">Charging animation</string>
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion</string>
 
+    <!-- Lockscreen blur & blur radious -->
+    <string name="see_through_title">See through</string>
+    <string name="see_through_summary">Blurs and display the content behind your lockscreen, your data may be visible to those around you</string>
+    <string name="blur_radius_title">Blur Intensity</string>
+    <string name="blur_radius_summary">Intensity for the blur effect</string>
+
 </resources>

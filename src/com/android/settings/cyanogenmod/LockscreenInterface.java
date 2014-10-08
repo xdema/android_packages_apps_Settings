@@ -38,6 +38,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.settings.crdroid.SeekBarPreferenceCHOS;
+
 public class LockscreenInterface extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -56,6 +58,8 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String KEY_LOCKSCREEN_TARGETS = "lockscreen_targets";
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
     private static final String KEY_DISABLE_FRAME = "lockscreen_disable_frame";
+    private static final String KEY_SEE_THROUGH = "see_through";
+    private static final String KEY_BLUR_RADIUS = "blur_radius";
     private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
 
     private static final int DLG_ALL_WIDGETS = 0;
@@ -69,6 +73,8 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private Preference mLockscreenTargets;
     private CheckBoxPreference mLockBeforeUnlock;
     private CheckBoxPreference mDisableFrame;
+    private CheckBoxPreference mSeeThrough;
+    private SeekBarPreferenceCHOS mBlurRadius;
     private CheckBoxPreference mEnablePowerMenu;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
@@ -132,6 +138,21 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 
         // Lock before Unlock
         mLockBeforeUnlock = (CheckBoxPreference) findPreference(LOCK_BEFORE_UNLOCK);
+
+        // lockscreen see through
+        mSeeThrough = (CheckBoxPreference) findPreference(KEY_SEE_THROUGH);
+        if (mSeeThrough != null) {
+            mSeeThrough.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_SEE_THROUGH, 0) == 1);
+        }
+
+        // Blur radius
+        mBlurRadius = (SeekBarPreferenceCHOS) findPreference(KEY_BLUR_RADIUS);
+        if (mBlurRadius != null) {
+            mBlurRadius.setValue(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
+            mBlurRadius.setOnPreferenceChangeListener(this);
+        }
         
         // Enable or disable camera widget based on device and policy
         if (Camera.getNumberOfCameras() == 0) {
@@ -244,6 +265,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         } else if (KEY_ENABLE_CAMERA.equals(key)) {
             mLockUtils.setCameraEnabled(mEnableCameraWidget.isChecked());
             return true;
+        } else if (preference == mSeeThrough) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_SEE_THROUGH,
+                    mSeeThrough.isChecked() ? 1 : 0);
+            return true;
         } else if (preference == mLockBeforeUnlock) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.LOCK_BEFORE_UNLOCK,
                     mLockBeforeUnlock.isChecked() ? 1 : 0);
@@ -260,6 +286,10 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             int index = mBatteryStatus.findIndexOfValue((String) objValue);
             Settings.System.putInt(cr, Settings.System.LOCKSCREEN_BATTERY_VISIBILITY, value);
             mBatteryStatus.setSummary(mBatteryStatus.getEntries()[index]);
+            return true;
+        } else if (preference == mBlurRadius) {
+                    Settings.System.putInt(getContentResolver(),
+            Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer) objValue);
             return true;
         } else if (preference == mEnableModLock) {
             boolean value = (Boolean) objValue;
