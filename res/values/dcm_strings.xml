@@ -14,7 +14,8 @@
     <string name="reset">Reset</string>
     <string name="reset_colors">Reset all colors to default?</string>
     <string name="reset_default_message">Reset default</string>
-    <string name="status_bar_style_title">Customizations</string>
+    <string name="status_bar_style_title">Clock Customizations</string>
+    <string name="status_bar_general_title">General</string>
     <string name="ok">OK</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
