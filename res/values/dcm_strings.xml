@@ -14,6 +14,7 @@
     <string name="reset">Reset</string>
     <string name="reset_colors">Reset all colors to default?</string>
     <string name="reset_default_message">Reset default</string>
+    <string name="status_bar_style_title">Customizations</string>
     <string name="ok">OK</string>
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
@@ -135,17 +136,11 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
-<<<<<<< HEAD
     <string name="arrow_right" translatable="false">\u2192</string>
     <string name="arrow_down" translatable="false">\u2193</string>
     <string name="hex_hint" translatable="false">#FF000000</string>
     <string name="ics_color" translatable="false">Reset</string>
-=======
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
->>>>>>> parent of 13994d5... Settings: Battery Bar [2/2]
     <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
@@ -223,7 +218,6 @@
     <string name="clock_font_normal">Normal</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-    <string name="status_bar_style_title">Clock Customization</string>
     <string name="clock_use_second">Use second clock</string>
     <string name="clock_use_second_summary">Show second in clock</string>
 
