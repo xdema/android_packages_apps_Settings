@@ -73,26 +73,10 @@
 
     </PreferenceCategory>
 
-    <!-- Clock Customizations -->
-    <PreferenceCategory
-        android:title="@string/status_bar_style_title">
-
-	<PreferenceScreen
-	    android:fragment="com.android.settings.crdroid.StatusBarClockStyle"
-	    android:key="clock_style_pref"
-	    android:title="@string/status_bar_clock" />
-
-    </PreferenceCategory>
-
     <!-- Status Bar General -->
     <PreferenceCategory
         android:key="status_bar_general"
-        android:title="@string/status_bar_general_title">      
-
-        <PreferenceScreen
-            android:fragment="com.android.settings.crdroid.StatusBarNetworkTraffic"
-            android:key="status_bar_network_traffic"
-            android:title="@string/network_traffic_title" />
+        android:title="@string/status_bar_general_title">
 
         <ListPreference
             android:key="status_bar_signal"

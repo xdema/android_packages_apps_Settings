@@ -225,6 +225,12 @@
             android:key="extra_display_settings_category"
             android:title="@string/extra_display_settings_title">
 
+            <!-- Network Traffic -->
+            <PreferenceScreen
+                android:fragment="com.android.settings.crdroid.StatusBarNetworkTraffic"
+                android:key="status_bar_network_traffic"
+                android:title="@string/network_traffic_title" />
+
             <!-- Recent panel -->
             <PreferenceScreen
                 android:key="recent_panel"
