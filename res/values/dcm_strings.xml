@@ -1155,7 +1155,7 @@
     <string name="blur_radius_summary">Intensity for the blur effect</string>
 
     <!-- AOKP Animations -->  
-    <string name="title_animation_controls">Custom System Animations</string>  
+    <string name="title_animation_controls">Aokp Animations</string>  
     <string name="activity_open_title">Activity Open Animation</string>  
     <string name="activity_close_title">Activity Close Animation</string>  
     <string name="task_open_title">Task Open Animation</string>  
