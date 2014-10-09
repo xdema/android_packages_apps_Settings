@@ -10,7 +10,7 @@ import android.preference.PreferenceScreen;
 import android.preference.CheckBoxPreference;
 import android.provider.Settings;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.temasek.AnimBarPreference;
+import com.android.settings.crdroid.AnimBarPreference;
 import com.android.settings.R;
 
 import com.android.internal.util.crdroid.AwesomeAnimationHelper;
