@@ -16,6 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/network_traffic_title">
 
     <!-- Network traffic meter -->
@@ -25,6 +26,12 @@
          android:entries="@array/show_network_traffic_state_entries"
          android:entryValues="@array/show_network_traffic_state_values"
          android:persistent="false" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="network_traffic_color"
+        android:title="@string/network_traffic_color_style"
+        android:defaultValue="0xffffffff"
+        android:dependency="network_traffic_state" />
 
     <ListPreference
          android:key="network_traffic_unit"
@@ -39,5 +46,22 @@
          android:entries="@array/show_network_traffic_frequency_entries"
          android:entryValues="@array/show_network_traffic_frequency_values"
          android:persistent="false" />
+
+    <CheckBoxPreference
+        android:key="network_traffic_autohide"
+        android:title="@string/network_traffic_autohide"
+        android:summary="@string/network_traffic_autohide_summary"
+        android:dependency="network_traffic_state"
+        android:defaultValue="false" />
+
+    <com.android.settings.cyanogenmod.SeekBarPreferenceChOS
+        android:key="network_traffic_autohide_threshold"
+        android:title="@string/network_traffic_autohide_threshold"
+        android:max="100"
+        settings:min="0"
+        settings:unitsLeft=""
+        settings:unitsRight="kB/s"
+        android:dependency="network_traffic_autohide"
+        android:persistent="false" />
  
 </PreferenceScreen>
